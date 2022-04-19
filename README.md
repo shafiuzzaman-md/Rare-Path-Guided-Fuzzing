@@ -48,8 +48,8 @@ export CFLAGS="-fprofile-arcs -ftest-coverage"
 make
 make install
 
-./afl-cov -d ../MOpt-AFL/afl_out --coverage-cmd \
-"cat AFL_FILE | ../MOpt-AFL/gcov/install/bin/strings" \
+./afl-cov -d ../../../afl_out --coverage-cmd \
+"cat AFL_FILE | ../../gcov/install/bin/strings" \
 --code-dir . --enable-branch-coverage
 ```
 
