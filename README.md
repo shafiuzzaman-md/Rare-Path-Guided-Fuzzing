@@ -59,11 +59,13 @@ Combine the 'before tests' and 'after tests' snapshots
 
 ```
 cd binutils-2.28
-lcov --add-tracefile base.info --add-tracefile test.info --output-file total.info --rc lcov_branch_coverage=1 
+lcov --no-external --capture --directory binutils-2.28/binutils --output-file test.info --rc lcov_branch_coverage=1
+
+lcov --add-tracefile app.info --add-tracefile test.info --output-file total.info --rc lcov_branch_coverage=1 
 ```
 Generate html coverage
 ```
-genhtml -k total.info --highlight --legend -output-directory html-output ./html-coverage/ ./total.info --rc lcov_branch_coverage=1
+genhtml -k total.info --highlight --legend -output-directory html-output ./html-coverage/ ./total.info --rc lcov_branch_coverage=1 
 ```
 
 
