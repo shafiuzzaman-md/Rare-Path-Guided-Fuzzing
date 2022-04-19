@@ -32,7 +32,7 @@ make install
 Run fuzzer
 ```
 mkdir afl_in afl_out
-afl-fuzz -V 60 -i afl_in -o afl_out /MOpt-AFL/install/bin/strings hello.o
+afl-fuzz -V 60 -i afl_in -o afl_out install/bin/strings @@
 ```
 
 Measure Coverage with afl-cov
@@ -44,11 +44,11 @@ tar -xzvf binutils-2.28.tar.gz
 cd binutils-2.28
 
 export CFLAGS="-fprofile-arcs -ftest-coverage"
-./configure  --prefix="/gcov/install/" 
+./configure  --prefix="/MOpt-AFL/gcov/install/" 
 make
 make install
 
-./afl-cov -d ../MOpt-AFL/binutils-2.28/afl_out --coverage-cmd \
+./afl-cov -d ../MOpt-AFL/afl_out --coverage-cmd \
 "cat AFL_FILE | ../MOpt-AFL/gcov/install/bin/strings" \
 --code-dir . --enable-branch-coverage
 ```
@@ -58,8 +58,8 @@ make install
 Combine the 'before tests' and 'after tests' snapshots
 
 ```
-lcov --add-tracefile app.info --add-tracefile test.info --output-file total.info --rc lcov_branch_coverage=1 
-export CFLAGS="-fprofile-arcs -ftest-coverage"
+cd binutils-2.28
+lcov --add-tracefile base.info --add-tracefile test.info --output-file total.info --rc lcov_branch_coverage=1 
 ```
 Generate html coverage
 ```
