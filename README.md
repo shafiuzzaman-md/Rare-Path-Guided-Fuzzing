@@ -23,7 +23,7 @@ lcov --capture --initial --directory . --output-file base.info
 
 Build binutils with fuzzing instrumentation
 ```
-export CFLAGS="-fprofile-arcs -ftest-coverage"
+export CFLAGS="-fprofile-arcs -ftest-coverage" # (only when we use lcov)
 CC=$PWD/../mopt/afl-gcc ./configure --prefix="/MOpt-AFL/install/" --disable-shared 
 make
 make install
