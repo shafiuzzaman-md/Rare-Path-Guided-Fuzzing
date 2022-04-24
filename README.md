@@ -58,6 +58,7 @@ afl-cov -d ../../out --coverage-cmd \
 ```
 
 Copy result to host
+```
 docker cp 2263eb931329://MOpt-AFL/out/  /Users/mdshafiuzzaman/Research/PReachFuzzResult
-
+```
 
