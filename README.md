@@ -43,18 +43,16 @@ make install
 ### Run fuzzer
 ```
 # Create input folder and add seed file inside input folder
-# Also add abinary file (here, helloworld)
 
-afl-fuzz -V 3600 -i in -o out install/bin/strings helloworld @@
-```
+/MOpt-AFL/mopt/afl-fuzz -V 3600 -i in -o out install/bin/strings @@
+
+
 
 ### Measure Coverage
 
 ```
-cd binutils-2.28/binutils
-afl-cov -d ../../out --coverage-cmd \
-"cat AFL_FILE | ../../gcov-project/install//bin/strings" \
---code-dir .
+cd gcov-project/binutils-2.28/binutils
+afl-cov -d ../../out --coverage-cmd "cat AFL_FILE | ../install/bin/strings" --code-dir . --overwrite
 ```
 
 Copy result to host
