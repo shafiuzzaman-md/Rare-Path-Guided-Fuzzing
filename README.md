@@ -33,6 +33,7 @@ cd gcov
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz --no-check-certificate
 tar -xzvf binutils-2.28.tar.gz
 cd binutils-2.28
+```
 
 Resetting counters for lcov
 
