@@ -26,7 +26,9 @@ Run fuzzer
 afl-fuzz -V 3600 -i in -o out install/bin/strings helloworld @@
 ```
 
-Measure Coverage
+## Measure Coverage
+
+build target in a separate folder
 ```
 mkdir gcov
 cd gcov
