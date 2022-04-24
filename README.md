@@ -1,7 +1,6 @@
 # Fuzz binutils with MOPT
 
-Get MOPT docker and binutils
-
+### Get MOPT docker and binutils
 ```
 docker pull zjuchenyuan/mopt
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz --no-check-certificate
@@ -9,8 +8,29 @@ tar -xzvf binutils-2.28.tar.gz
 cd binutils-2.28
 ```
 
+### afl-cov Installation
+```
+$ apt-get install afl-cov
+# this version seemes not supporting branch coverage statistics
 
-Build binutils with fuzzing instrumentation
+$ apt-get install lcov
+$ git clone https://github.com/mrash/afl-cov.git
+$ ./afl-cov/afl-cov -V
+$ afl-cov-0.6.2
+# this way you get latest version
+```
+
+### Build binary for afl-cov support:
+```
+cp -r binutils-2.28 gcov-project
+cd  gcov-project/binutils-2.28
+export CFLAGS="-fprofile-arcs -ftest-coverage"
+./configure  --prefix="/gcov-project/install/" 
+make
+make install
+```
+
+### Build binutils
 ```
 export CFLAGS="-fprofile-arcs -ftest-coverage" # (only when we use lcov)
 CC=$PWD/../mopt/afl-gcc ./configure --prefix="/MOpt-AFL/install/" --disable-shared 
@@ -18,53 +38,21 @@ make
 make install
 ```
 
-Create input folder and add seed file inside input folder
 
-Also add abinary file (here, helloworld)
-Run fuzzer
+
+### Run fuzzer
 ```
+# Create input folder and add seed file inside input folder
+# Also add abinary file (here, helloworld)
+
 afl-fuzz -V 3600 -i in -o out install/bin/strings helloworld @@
 ```
 
-## Measure Coverage
-
-build target in a separate folder
-```
-mkdir gcov
-cd gcov
-wget https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz --no-check-certificate
-tar -xzvf binutils-2.28.tar.gz
-```
-
-Resetting counters for lcov and initiate coverage measurement
+### Measure Coverage
 
 ```
-cd binutils-2.28
-lcov --zerocounters --directory .
-lcov --capture --initial --directory . --output-file base.info
-
-export CFLAGS="-fprofile-arcs -ftest-coverage"
-./configure  --prefix="/MOpt-AFL/gcov/install/" 
-make
-make install
-
-./afl-cov -d ../../../afl_out --coverage-cmd \
-"cat AFL_FILE | ../../gcov/install/bin/strings" \
---code-dir . --enable-branch-coverage
+cd binutils-2.28/binutils
+afl-cov -d ../../out --coverage-cmd \
+"cat AFL_FILE | ../../gcov-project/install//bin/strings" \
+--code-dir .
 ```
-
-
-Combine the 'before tests' and 'after tests' snapshots to generate the report
-
-```
-cd binutils-2.28
-mkdir cc_report
-lcov --no-external --capture --directory ../binutils-2.28/binutils --output-file test.info --rc lcov_branch_coverage=1
-
-lcov --add-tracefile app.info --add-tracefile test.info --output-file total.info --rc lcov_branch_coverage=1 
-```
-Generate html coverage
-```
-genhtml --show-details --highlight --legend -output-directory ./html-coverage/ ./total.info --rc lcov_branch_coverage=1 
-```
-
