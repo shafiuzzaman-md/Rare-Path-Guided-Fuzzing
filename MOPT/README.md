@@ -46,7 +46,7 @@ make install
 ### Measure Coverage
 
 ```
-cd gcov-project/binutils-2.28/binutils
+cd gcov-project/binutils-2.28
 afl-cov -d ../../out --coverage-cmd "cat AFL_FILE | ../install/bin/strings" --code-dir . --overwrite
 ```
 
