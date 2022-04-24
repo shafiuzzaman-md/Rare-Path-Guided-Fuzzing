@@ -34,14 +34,13 @@ mkdir gcov
 cd gcov
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz --no-check-certificate
 tar -xzvf binutils-2.28.tar.gz
-cd binutils-2.28
 ```
 
 Resetting counters for lcov and initiate coverage measurement
 
 ```
+cd binutils-2.28
 lcov --zerocounters --directory .
-
 lcov --capture --initial --directory . --output-file base.info
 
 export CFLAGS="-fprofile-arcs -ftest-coverage"
