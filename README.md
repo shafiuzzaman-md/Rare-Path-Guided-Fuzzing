@@ -38,15 +38,12 @@ make
 make install
 ```
 
-
-
 ### Run fuzzer
 ```
 # Create input folder and add seed file inside input folder
 
 /MOpt-AFL/mopt/afl-fuzz -V 3600 -i in -o out install/bin/strings @@
-
-
+```
 
 ### Measure Coverage
 
