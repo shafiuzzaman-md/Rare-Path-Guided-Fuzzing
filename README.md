@@ -20,7 +20,7 @@ $ afl-cov-0.6.2
 # this way you get latest version
 ```
 
-### Build binary for afl-cov support:
+### Build binary for afl-cov support
 ```
 cp -r binutils-2.28 gcov-project
 cd  gcov-project/binutils-2.28
