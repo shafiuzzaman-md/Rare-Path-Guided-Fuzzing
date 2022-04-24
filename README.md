@@ -25,7 +25,7 @@ $ afl-cov-0.6.2
 cp -r binutils-2.28 gcov-project
 cd  gcov-project/binutils-2.28
 $ make clean 
-$ ./configure --prefix="/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
+$ ./configure --prefix="/MOpt-AFL/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
 $ make
 $ make install
 ```
