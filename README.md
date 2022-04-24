@@ -20,17 +20,15 @@ $ afl-cov-0.6.2
 # this way you get latest version
 ```
 
-<!--
 ### Build binary for afl-cov support:
 ```
 cp -r binutils-2.28 gcov-project
-cd  gcov-project
+cd  gcov-project/binutils-2.28
 $ make clean 
 $ ./configure --prefix="/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
 $ make
 $ make install
 ```
--->
 
 ### Build binutils
 ```
@@ -55,6 +53,11 @@ afl-fuzz -V 3600 -i in -o out install/bin/strings helloworld @@
 ```
 cd binutils-2.28/binutils
 afl-cov -d ../../out --coverage-cmd \
-"cat AFL_FILE | ../../install//bin/strings" \
+"cat AFL_FILE | ../../gcov-project/install//bin/strings" \
 --code-dir .
 ```
+
+Copy result to host
+docker cp 2263eb931329://MOpt-AFL/out/  /Users/mdshafiuzzaman/Research/PReachFuzzResult
+
+
