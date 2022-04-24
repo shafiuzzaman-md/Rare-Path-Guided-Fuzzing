@@ -37,16 +37,12 @@ tar -xzvf binutils-2.28.tar.gz
 cd binutils-2.28
 ```
 
-Resetting counters for lcov
+Resetting counters for lcov and initiate coverage measurement
 
 ```
 lcov --zerocounters --directory .
-```
 
-Capturing the current coverage state to a file
-```
 lcov --capture --initial --directory . --output-file base.info
-```
 
 export CFLAGS="-fprofile-arcs -ftest-coverage"
 ./configure  --prefix="/MOpt-AFL/gcov/install/" 
@@ -59,8 +55,7 @@ make install
 ```
 
 
-
-Combine the 'before tests' and 'after tests' snapshots
+Combine the 'before tests' and 'after tests' snapshots to generate the report
 
 ```
 cd binutils-2.28
