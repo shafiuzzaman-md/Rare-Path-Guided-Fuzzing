@@ -24,4 +24,9 @@ make install
 
 
 ```
-afl-fuzz -V 3600 -i in -o out install/bin/strings @@
+afl-fuzz -V 10800 -i in -o out install/bin/strings @@
+```
+```
+cd gcov-project/binutils-2.28
+afl-cov -d ../../out --coverage-cmd "cat AFL_FILE | ../install/bin/strings" --code-dir . --enable-branch-coverage --overwrite
+```
