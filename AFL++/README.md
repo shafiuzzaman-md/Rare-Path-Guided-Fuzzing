@@ -11,3 +11,17 @@ mkdir gcov-project
 cp -r binutils-2.28 gcov-project/binutils-2.28
 cd  gcov-project/binutils-2.28
 ./configure --prefix="/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
+make
+make install
+```
+
+```
+cd binutils-2.28
+CC=afl-cc  ./configure  --prefix="/install/"
+make
+make install
+```
+
+
+```
+afl-fuzz -V 3600 -i in -o out install/bin/strings @@
