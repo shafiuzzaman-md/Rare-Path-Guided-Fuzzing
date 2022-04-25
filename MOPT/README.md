@@ -9,23 +9,24 @@ tar -xzvf binutils-2.28.tar.gz
 
 ### afl-cov Installation
 ```
-$ apt-get install afl-cov
+apt-get install afl-cov
 # this version seemes not supporting branch coverage statistics
-$ apt-get install lcov
-$ git clone https://github.com/mrash/afl-cov.git
-$ ./afl-cov/afl-cov -V
-$ afl-cov-0.6.2
+apt-get install lcov
+git clone https://github.com/mrash/afl-cov.git
+./afl-cov/afl-cov -V
+afl-cov-0.6.2
 # this way you get latest version
 ```
 
 ### Build binary for afl-cov support
 ```
-cp -r binutils-2.28 gcov-project
+mkdir gcov-project
+cp -r binutils-2.28 gcov-project/binutils-2.28
 cd  gcov-project/binutils-2.28
-$ make clean 
-$ ./configure --prefix="/MOpt-AFL/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
-$ make
-$ make install
+make clean 
+./configure --prefix="/MOpt-AFL/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
+make
+make install
 ```
 
 ### Build binutils
