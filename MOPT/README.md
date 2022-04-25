@@ -5,7 +5,6 @@
 docker pull zjuchenyuan/mopt
 wget https://ftp.gnu.org/gnu/binutils/binutils-2.28.tar.gz --no-check-certificate
 tar -xzvf binutils-2.28.tar.gz
-cd binutils-2.28
 ```
 
 ### afl-cov Installation
