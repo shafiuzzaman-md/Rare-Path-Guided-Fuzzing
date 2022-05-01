@@ -14,6 +14,7 @@ cd  gcov-project/binutils-2.28
 make
 make install
 ```
+argument fuzzing: https://github.com/mirrorer/afl/blob/master/experimental/argv_fuzzing/argv-fuzz-inl.h
 
 ```
 cd binutils-2.28
