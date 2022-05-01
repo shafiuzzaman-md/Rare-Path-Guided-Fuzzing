@@ -14,7 +14,9 @@ cd  gcov-project/binutils-2.28
 make
 make install
 ```
-argument fuzzing: https://github.com/mirrorer/afl/blob/master/experimental/argv_fuzzing/argv-fuzz-inl.h
+argument fuzzing:
+https://liveoverflow.com/why-pick-sudo-research-target-part-1/#from-command-line-arguments-to-fuzzing
+https://github.com/mirrorer/afl/blob/master/experimental/argv_fuzzing/argv-fuzz-inl.h
 
 ```
 cd binutils-2.28
