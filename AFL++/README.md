@@ -25,7 +25,6 @@ make
 make install
 ```
 
-
 ```
 afl-fuzz -V 10800 -i in -o out install/bin/strings @@ (remove @@ for argument fuzzing)
 ```
