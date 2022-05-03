@@ -31,7 +31,7 @@ make install
 
 ### Build binutils
 ```
-export CFLAGS="-fprofile-arcs -ftest-coverage" # (only when we use lcov)
+cd binutils-2.28/binutils
 CC=$PWD/../mopt/afl-gcc ./configure --prefix="/MOpt-AFL/install/" --disable-shared 
 make
 make install
