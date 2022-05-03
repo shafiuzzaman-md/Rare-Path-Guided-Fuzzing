@@ -26,7 +26,7 @@ make install
 ```
 
 ```
-afl-fuzz -V 3600 -i in -o out install/bin/strings
+afl-fuzz -V 10800 -i in -o out install/bin/strings
 ```
 ```
 cd gcov-project/binutils-2.28
