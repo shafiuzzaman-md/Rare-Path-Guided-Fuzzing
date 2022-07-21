@@ -1,3 +1,4 @@
+```
 docker pull aflplusplus/aflplusplus
 
 cd $HOME
@@ -5,3 +6,6 @@ mkdir fuzzing_tcpdump && cd fuzzing_tcpdump/
 
 wget https://github.com/the-tcpdump-group/tcpdump/archive/refs/tags/tcpdump-4.9.2.tar.gz
 
+
+
+afl-fuzz -V 86400 -i in -o out ./install/sbin/tcpdump @@
