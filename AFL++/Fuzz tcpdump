@@ -15,6 +15,28 @@ tar -xzvf libpcap-1.8.0.tar.gz
 
 mv libpcap-libpcap-1.8.0/ libpcap-1.8.0
 
+cd $HOME/fuzzing_tcpdump/libpcap-1.8.0/
+./configure --enable-shared=no
+make
+
+mkdir gcov-project
+cp -r libpcap-1.8.0 gcov-project/libpcap-1.8.0
+cp -r tcpdump-tcpdump-4.9.2 gcov-project/tcpdump-tcpdump-4.9.2
+cd  gcov-project/tcpdump-tcpdump-4.9.2
+./configure --prefix="$HOME/fuzzing_tcpdump/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
+make
+make install
 
 
-afl-fuzz -V 86400 -i in -o out ./install/sbin/tcpdump @@
+cd $HOME/fuzzing_tcpdump/tcpdump-tcpdump-4.9.2/
+CC=afl-cc ./configure --prefix="$HOME/fuzzing_tcpdump/install/"
+make
+make install
+
+
+docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/tcpdump.pcap 8360257441ae://root/fuzzing_tcpdump/in
+
+afl-fuzz -V 86400 -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -vvvvXX -ee -nn -r @@
+
+cd  gcov-project/tcpdump-tcpdump-4.9.2
+afl-cov -d ../../out --coverage-cmd "cat AFL_FILE | ../install/sbin/tcpdump" --code-dir . --enable-branch-coverage --overwrite
