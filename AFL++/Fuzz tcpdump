@@ -41,4 +41,5 @@ docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/tcpdum
 
 afl-fuzz -V 86400 -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -vvvvXX -ee -nn -r @@
 
-./afl-cov/afl-cov -d out --live --coverage-cmd "cat AFL_FILE | gcov-project/install/sbin/tcpdump" --code-dir . --enable-branch-coverage
+cd  gcov-project/tcpdump-tcpdump-4.9.2
+./afl-cov/afl-cov -d ../../out --coverage-cmd "cat AFL_FILE | ../install/sbin/tcpdump" --code-dir . --enable-branch-coverage  --overwrite
