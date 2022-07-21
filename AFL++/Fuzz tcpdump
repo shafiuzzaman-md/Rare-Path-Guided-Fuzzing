@@ -1,10 +1,19 @@
 ```
 docker pull aflplusplus/aflplusplus
+```
 
+```
 cd $HOME
 mkdir fuzzing_tcpdump && cd fuzzing_tcpdump/
-
+```
+```
 wget https://github.com/the-tcpdump-group/tcpdump/archive/refs/tags/tcpdump-4.9.2.tar.gz
+tar -xzvf tcpdump-4.9.2.tar.gz
+
+wget https://github.com/the-tcpdump-group/libpcap/archive/refs/tags/libpcap-1.8.0.tar.gz
+tar -xzvf libpcap-1.8.0.tar.gz
+
+mv libpcap-libpcap-1.8.0/ libpcap-1.8.0
 
 
 
