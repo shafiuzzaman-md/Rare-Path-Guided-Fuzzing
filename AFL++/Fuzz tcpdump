@@ -19,11 +19,11 @@ cp -r tcpdump-tcpdump-4.9.2 gcov-project/tcpdump-tcpdump-4.9.2
 
 
 cd  gcov-project/libpcap-1.8.0
-./configure --enable-shared=no CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage" --disable-shared
+./configure --enable-shared=no CFLAGS="-fprofile-arcs -ftest-coverage"
 make
 
 cd  gcov-project/tcpdump-tcpdump-4.9.2
-./configure --prefix="$HOME/fuzzing_tcpdump/gcov-project/install/" CC="gcc" CXX="g++" CFLAGS="-fprofile-arcs -ftest-coverage"
+./configure --prefix="$HOME/fuzzing_tcpdump/gcov-project/install/" CFLAGS="-fprofile-arcs -ftest-coverage"
 make
 make install
 
