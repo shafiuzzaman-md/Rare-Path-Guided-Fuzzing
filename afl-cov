@@ -1,4 +1,4 @@
-apt-get install lcov
+sudo apt-get install lcov
 git clone https://github.com/mrash/afl-cov.git
 sudo apt update
 sudo apt install python2
