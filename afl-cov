@@ -1,5 +1,7 @@
 apt-get install lcov
 git clone https://github.com/mrash/afl-cov.git
+sudo apt update
+sudo apt install python2
 ./afl-cov/afl-cov -V
 afl-cov-0.6.2
 # this way you get latest version
