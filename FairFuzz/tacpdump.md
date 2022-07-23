@@ -19,11 +19,11 @@ CC=$PWD/../../../afl-rb/afl-gcc ./configure --disable-shared
 make
 
 cd $HOME/fuzzing_tcpdump/tcpdump-tcpdump-4.9.2/
-CC=$PWD/../../../afl-rb/afl-gcc --prefix="$HOME/fuzzing_tcpdump/install/"
+CC=$PWD/../../../afl-rb/afl-gcc ./configure --prefix="$HOME/fuzzing_tcpdump/install/"
 make
 make install
 ```
-Seed: docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/tcpdump.pcap 8360257441ae://root/fuzzing_tcpdump/in
+Seed: docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/tcpdump.pcap c7ebb1e86f4a://root/fuzzing_tcpdump/in
 
 
 ```
