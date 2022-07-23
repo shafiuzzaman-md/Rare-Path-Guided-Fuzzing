@@ -1,4 +1,3 @@
-```
 docker pull aflplusplus/aflplusplus
 
 
@@ -12,7 +11,7 @@ wget https://github.com/the-tcpdump-group/libpcap/archive/refs/tags/libpcap-1.8.
 tar -xzvf libpcap-1.8.0.tar.gz
 
 mv libpcap-libpcap-1.8.0/ libpcap-1.8.0
-```
+
 
 mkdir gcov-project
 cp -r libpcap-1.8.0 gcov-project/libpcap-1.8.0
@@ -27,6 +26,8 @@ cd  gcov-project/tcpdump-tcpdump-4.9.2
 ./configure --prefix="$HOME/fuzzing_tcpdump/gcov-project/install/" CFLAGS="-fprofile-arcs -ftest-coverage"
 make
 make install
+
+
 
 cd $HOME/fuzzing_tcpdump/libpcap-1.8.0/
 CC=afl-cc ./configure --enable-shared=no
