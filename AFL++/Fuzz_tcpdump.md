@@ -26,7 +26,7 @@ Seed: docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/
 
 
 ```
-afl-fuzz -V 86400 -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -vvvvXX -ee -nn -r @@
+afl-fuzz -V 86400 -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -nr @@
 ```
 # Code coverage
 
