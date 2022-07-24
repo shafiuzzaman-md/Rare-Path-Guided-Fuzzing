@@ -27,7 +27,7 @@ Seed: docker cp /Users/mdshafiuzzaman/PReachFuzzResult/PreachExp/tcpdump/random/
 
 
 ```
-timeout 86400 $PWD/../../../afl-rb/afl-fuzz -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -vvvvXX -ee -nn -r @@
+timeout 86400 $PWD/../../../afl-rb/afl-fuzz -d -r -i in -o out -- $HOME/fuzzing_tcpdump/install/sbin/tcpdump -nr @@
 ```
 # Code coverage
 
