@@ -53,5 +53,5 @@ make install
 ```
 
 ```
-./afl-cov/afl-cov -d ../../out --coverage-cmd "../install/sbin/tcpdump -vvvvXX -ee -nn -r < AFL_FILE" --code-dir . --enable-branch-coverage  --overwrite
+./afl-cov/afl-cov -d ../../out --coverage-cmd "../install/sbin/tcpdump -nr < AFL_FILE" --code-dir . --enable-branch-coverage  --overwrite
 ```
