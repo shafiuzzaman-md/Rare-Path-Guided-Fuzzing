@@ -1,3 +1,4 @@
+// Wrapper code starts
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -5,21 +6,8 @@
 #include <stdbool.h>
 #include <sys/types.h>
 int seed = 0;
+const char *file_name = "file.txt";
 
-
-void __VERIFIER_error(){
-   abort();
-}
-
-extern void __VERIFIER_error() __attribute__ ((__noreturn__));
-
-void __VERIFIER_assert(int cond) {
-  if (!(cond)) {
-    ERROR: __VERIFIER_error();
-  }
-  return;
-}
-//int __VERIFIER_nondet_int();
 int __VERIFIER_nondet_int(){ \
   char data[100][1000];\
   int line = 0;\
@@ -31,10 +19,11 @@ int __VERIFIER_nondet_int(){ \
   return value;\
 }
 
-int __VERIFIER_nondet_bool(){ \
+_Bool __VERIFIER_nondet_bool(){ \
+  FILE *fp = fopen(file_name, "r");\
   char data[100][1000];\
   int line = 0;\
-  while (fscanf(stdin, "%s", data[line++]) != EOF);\
+  while (fscanf(fp, "%s", data[line++]) != EOF);\
   int value = atoi(data[seed++]);\
   FILE * input_file = fopen("input_xml", "a");\
   fprintf(input_file, "<input type=\"input\">%d</input>\n", value);\
@@ -42,24 +31,46 @@ int __VERIFIER_nondet_bool(){ \
   return value;\
 }
 
-int __VERIFIER_nondet_char(){ \
-  char data[100][1000];\
-  int line = 0;\
-  while (fscanf(stdin, "%s", data[line++]) != EOF);\
-  char value = data[seed++][0];\
+char __VERIFIER_nondet_char(){ \
+  FILE *fp = fopen(file_name, "r");\
+  char file_content[100];\
+  char input[100];\
+  char value;\
+  while (fgets(file_content, sizeof(file_content), fp));\
+  int j;\
+  j=0;\
+  for (int i =0; i<strlen(file_content); i++){\
+    if(file_content[i] != ' ')\
+        input[j++] = file_content[i];}\
   FILE * input_file = fopen("input_xml", "a");\
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);\
+  value = input[seed++];
+  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);\
   fclose(input_file);\
   return value;\
 }
 
-int __VERIFIER_nondet_uchar(){ \
-  char data[100][1000];\
-  int line = 0;\
-  while (fscanf(stdin, "%s", data[line++]) != EOF);\
-  char value = data[seed++][0];\
+char __VERIFIER_nondet_uchar(){ \
+  FILE *fp = fopen(file_name, "r");\
+  char file_content[100];\
+  char input[100];\
+  char value;\
+  while (fgets(file_content, sizeof(file_content), fp));\
+  int j;\
+  j=0;\
+  for (int i =0; i<strlen(file_content); i++){\
+    if(file_content[i] != ' ')\
+        input[j++] = file_content[i];}\
   FILE * input_file = fopen("input_xml", "a");\
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);\
+  value = input[seed++];
+  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);\
   fclose(input_file);\
   return value;\
 }
+
+void __VERIFIER_error(){
+   abort();
+}
+
+void __VERIFIER_assume(int expression) { if (!expression) { LOOP: goto LOOP; }; return; }
+
+// End wrapper code
