@@ -7,18 +7,13 @@
 // Driver code
 int main()
 {
-	FILE* ptr;
+	//FILE* ptr;
 	char str[50];
     char data[50];
-	ptr = fopen("file.txt", "r");
+	//ptr = fopen("file.txt", "r");
 
-	if (NULL == ptr) {
-		printf("file can't be opened \n");
-	}
-
-	printf("content of this file are \n");
-   int j;
-	while (fgets(str, 50, ptr)) {
+    int j;
+	while (fgets(str, 50, stdin)) {
 		printf("%s", str);
 	}
     j=0;
@@ -26,6 +21,6 @@ int main()
     if(str[i] != ' ')
         data[j++] = str[i];
     }
-	fclose(ptr);
+	//fclose(ptr);
 	return 0;
 }

@@ -1,5 +1,11 @@
-
-#include "svcompwrapper.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <stdbool.h>
+#include <sys/types.h>
+int seed = 0;
+const char *file_name = "file.txt";
 extern void abort(void);
 //extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 //void reach_error() { __assert_fail("0", "pals_floodmax.3_overflow.ufo.UNBOUNDED.pals.c", 3, "reach_error"); }
@@ -480,6 +486,27 @@ int check(void)
   return (tmp);
 }
 }
+
+_Bool __VERIFIER_nondet_bool(){ 
+  //FILE *fp = fopen(file_name, "r");
+  char ptr[100];
+  fgets(ptr, sizeof(ptr), stdin);
+  return ptr[seed++];
+
+}
+char __VERIFIER_nondet_char(){ 
+  //FILE *fp = fopen(file_name, "r");
+  char ptr[100];
+  fgets(ptr, sizeof(ptr), stdin);
+  return ptr[seed++];
+}
+
+char __VERIFIER_nondet_uchar(){ 
+  //FILE *fp = fopen(file_name, "r");
+  char ptr[100];
+  fgets(ptr, sizeof(ptr), stdin);
+  return ptr[seed++];
+}
 int main(void) 
 { 
   int c1 ;
@@ -487,6 +514,7 @@ int main(void)
   FILE * input_file1 = fopen("input_value.txt", "a");
   {
   c1 = 0;
+   printf("Getting inputs");
   ep12 = __VERIFIER_nondet_bool();
   fprintf(input_file1, "<input type=\"ep12\">%d</input>\n", ep12);
   ep13 = __VERIFIER_nondet_bool();
@@ -550,6 +578,7 @@ int main(void)
   fprintf(input_file1, "<input type=\"max3\">%c</input>\n", max3);
   mode3 = __VERIFIER_nondet_bool();
    fprintf(input_file1, "<input type=\"mode3\">%d</input>\n", mode3);
+  printf("Input done: max3: %c",max3);
    i2 = init();
   assume_abort_if_not(i2);
   p12_old = nomsg;
@@ -583,7 +612,7 @@ int main(void)
     p32_old = p32_new;
     p32_new = nomsg;
     c1 = check();
-    assert(0);
+    //assert(1);
     }
   }
 }
