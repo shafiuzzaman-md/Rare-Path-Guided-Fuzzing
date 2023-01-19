@@ -5,30 +5,8 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <sys/types.h>
-
 int seed = 0;
 const char *file_name = "file.txt";
-
-
-char __VERIFIER_nondet_char(){ 
-  FILE *fp = fopen(file_name, "r");
-  char value;
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), fp);
-  FILE * input_file = fopen("input_xml", "a");
-  value = ptr[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
-  return value;
-}
-
-
-
-
-
-
-
-
 
 int __VERIFIER_nondet_int(){ 
   //FILE *fp = fopen(file_name, "r");
@@ -65,7 +43,7 @@ int __VERIFIER_nondet_uint(){
   fclose(input_file);
   return value;
 }
-/*
+
 _Bool __VERIFIER_nondet_bool(){ 
   //FILE *fp = fopen(file_name, "r");
   char file_content[100];
@@ -82,21 +60,8 @@ _Bool __VERIFIER_nondet_bool(){
   fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
   fclose(input_file);
   return value;
-}*/
-
-
-bool __VERIFIER_nondet_bool(){ 
-  FILE *fp = fopen(file_name, "r");
-  bool value;
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), stdin);
-  FILE * input_file = fopen("input_xml", "a");
-  value = ptr[seed++];
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
-  fclose(input_file);
-  return value;
 }
-/*
+
 char __VERIFIER_nondet_char(){ 
   //FILE *fp = fopen(file_name, "r");
   char file_content[100];
@@ -113,7 +78,7 @@ char __VERIFIER_nondet_char(){
   fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
   fclose(input_file);
   return value;
-}*/
+}
 
 char __VERIFIER_nondet_uchar(){ 
   //FILE *fp = fopen(file_name, "r");

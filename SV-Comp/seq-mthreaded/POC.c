@@ -1,11 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdbool.h>
-#include <sys/types.h>
-int seed = 0;
-const char *file_name = "file.txt";
+#include "svcompwrapper.h"
 extern void abort(void);
 //extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 //void reach_error() { __assert_fail("0", "pals_floodmax.3_overflow.ufo.UNBOUNDED.pals.c", 3, "reach_error"); }
@@ -487,97 +480,82 @@ int check(void)
 }
 }
 
-_Bool __VERIFIER_nondet_bool(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), stdin);
-  return ptr[seed++];
 
-}
-char __VERIFIER_nondet_char(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), stdin);
-  return ptr[seed++];
-}
-
-char __VERIFIER_nondet_uchar(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), stdin);
-  return ptr[seed++];
-}
 int main(void) 
 { 
   int c1 ;
   int i2 ;
-  FILE * input_file1 = fopen("input_value.txt", "a");
+  //FILE * input_file1 = fopen("input_value.txt", "a");
   {
   c1 = 0;
    printf("Getting inputs");
-  ep12 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep12\">%d</input>\n", ep12);
-  ep13 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep13\">%d</input>\n", ep13);
-  ep21 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep21\">%d</input>\n", ep21);
-  ep23 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep23\">%d</input>\n", ep23);
-  ep31 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep31\">%d</input>\n", ep31);
-  ep32 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"ep32\">%d</input>\n", ep32);
+  //ep12 = __VERIFIER_nondet_bool();
+  ep12= 0;
+  //fprintf(input_file1, "<input type=\"ep12\">%d</input>\n", ep12);
+  ep13 = 1;
+  //fprintf(input_file1, "<input type=\"ep13\">%d</input>\n", ep13);
+  ep21 = 1;
+  //fprintf(input_file1, "<input type=\"ep21\">%d</input>\n", ep21);
+  ep23 = 1;
+  //fprintf(input_file1, "<input type=\"ep23\">%d</input>\n", ep23);
+  ep31 = 1;
+  //fprintf(input_file1, "<input type=\"ep31\">%d</input>\n", ep31);
+  ep32 = 1;
+  //fprintf(input_file1, "<input type=\"ep32\">%d</input>\n", ep32);
   id1 = __VERIFIER_nondet_char();
-   fprintf(input_file1, "<input type=\"id1\">%c</input>\n", id1);
+  // fprintf(input_file1, "<input type=\"id1\">%c</input>\n", id1);
   //r1 = __VERIFIER_nondet_uchar();
   r1 = '\0';
-   fprintf(input_file1, "<input type=\"r1\">%c</input>\n", r1);
+  // fprintf(input_file1, "<input type=\"r1\">%c</input>\n", r1);
   //st1 = __VERIFIER_nondet_char();
   st1 = '\0';
-   fprintf(input_file1, "<input type=\"st1\">%c</input>\n", st1);
+  // fprintf(input_file1, "<input type=\"st1\">%c</input>\n", st1);
   //nl1 = __VERIFIER_nondet_char();
   nl1 = '\0';
-   fprintf(input_file1, "<input type=\"nl1\">%c</input>\n", nl1);
-  m1 = __VERIFIER_nondet_char();
-   fprintf(input_file1, "<input type=\"m1\">%c</input>\n", m1);
-  max1 = __VERIFIER_nondet_char();
-   fprintf(input_file1, "<input type=\"max1\">%c</input>\n", max1);
-  mode1 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"mode1\">%d</input>\n", mode1);
-  id2 = __VERIFIER_nondet_char();
-  fprintf(input_file1, "<input type=\"id2\">%c</input>\n", id2);
+ //  fprintf(input_file1, "<input type=\"nl1\">%c</input>\n", nl1);
+  m1 = '3';
+  // fprintf(input_file1, "<input type=\"m1\">%c</input>\n", m1);
+  max1 = '1';
+  // fprintf(input_file1, "<input type=\"max1\">%c</input>\n", max1);
+  mode1 = 0;
+  //fprintf(input_file1, "<input type=\"mode1\">%d</input>\n", mode1);
+  id2 ='A';
+  //fprintf(input_file1, "<input type=\"id2\">%c</input>\n", id2);
   //r2 = __VERIFIER_nondet_uchar();
   r2 = '\0';
-   fprintf(input_file1, "<input type=\"r2\">%c</input>\n", r2);
+  // fprintf(input_file1, "<input type=\"r2\">%c</input>\n", r2);
   //st2 = __VERIFIER_nondet_char();
   st2 ='\0';
-   fprintf(input_file1, "<input type=\"st2\">%c</input>\n", st2);
+  // fprintf(input_file1, "<input type=\"st2\">%c</input>\n", st2);
   //nl2 = __VERIFIER_nondet_char();
   nl2 ='\0';
-   fprintf(input_file1, "<input type=\"nl2\">%c</input>\n", nl2);
-  m2 = __VERIFIER_nondet_char();
-   fprintf(input_file1, "<input type=\"m2\">%c</input>\n", m2);
-  max2 = __VERIFIER_nondet_char();
-   fprintf(input_file1, "<input type=\"max2\">%c</input>\n", max2);
-  mode2 = __VERIFIER_nondet_bool();
-  fprintf(input_file1, "<input type=\"mode2\">%d</input>\n", mode2);
-  id3 = __VERIFIER_nondet_char();
-  fprintf(input_file1, "<input type=\"id3\">%c</input>\n", id3);
+  // fprintf(input_file1, "<input type=\"nl2\">%c</input>\n", nl2);
+  m2 ='3';
+  // fprintf(input_file1, "<input type=\"m2\">%c</input>\n", m2);
+  max2 = 'A';
+  // fprintf(input_file1, "<input type=\"max2\">%c</input>\n", max2);
+  mode2 = 0;
+  //fprintf(input_file1, "<input type=\"mode2\">%d</input>\n", mode2);
+  id3 = 'B';
+  //fprintf(input_file1, "<input type=\"id3\">%c</input>\n", id3);
  // r3 = __VERIFIER_nondet_uchar();
   r3 = '\0';
-  fprintf(input_file1, "<input type=\"r3\">%c</input>\n", r3);
+  //fprintf(input_file1, "<input type=\"r3\">%c</input>\n", r3);
   //st3 = __VERIFIER_nondet_char();
   st3 ='\0';
-  fprintf(input_file1, "<input type=\"st3\">%c</input>\n", st3);
+  //fprintf(input_file1, "<input type=\"st3\">%c</input>\n", st3);
   //nl3 = __VERIFIER_nondet_char();
   nl3 = '\0';
-  fprintf(input_file1, "<input type=\"nl3\">%c</input>\n", nl3);
-  m3 = __VERIFIER_nondet_char();
-  fprintf(input_file1, "<input type=\"m3\">%c</input>\n", m3);
-  max3 = __VERIFIER_nondet_char();
-  fprintf(input_file1, "<input type=\"max3\">%c</input>\n", max3);
-  mode3 = __VERIFIER_nondet_bool();
-   fprintf(input_file1, "<input type=\"mode3\">%d</input>\n", mode3);
+  //fprintf(input_file1, "<input type=\"nl3\">%c</input>\n", nl3);
+  //m3 = __VERIFIER_nondet_char();
+  m3 = '3';
+  //fprintf(input_file1, "<input type=\"m3\">%c</input>\n", m3);
+  //max3 = __VERIFIER_nondet_char();
+  max3 = 'B';
+  //fprintf(input_file1, "<input type=\"max3\">%c</input>\n", max3);
+  //mode3 = __VERIFIER_nondet_bool();
+  mode3 = 0;
+  // fprintf(input_file1, "<input type=\"mode3\">%d</input>\n", mode3);
   printf("Input done: max3: %c",max3);
    i2 = init();
   assume_abort_if_not(i2);
@@ -612,11 +590,12 @@ int main(void)
     p32_old = p32_new;
     p32_new = nomsg;
     c1 = check();
-    //assert(1);
+    //assert(c1);
+    if(c1) break;
     }
   }
 }
-fclose(input_file1);
+//fclose(input_file1);
 return 0;
 }
 void assert(_Bool arg ) 
@@ -624,7 +603,7 @@ void assert(_Bool arg )
 
 
   {
-  if (! arg) {
+  if ( arg) {
     {
     ERROR: {reach_error();abort();}
     }
