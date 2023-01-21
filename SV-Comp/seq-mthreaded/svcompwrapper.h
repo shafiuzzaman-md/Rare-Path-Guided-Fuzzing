@@ -2,136 +2,84 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <stdbool.h>
-#include <sys/types.h>
+
+//constants for maximum number of lines in the file and max length of a line
+#define MAX_LINES 100
+#define MAX_LEN 1000
 
 int seed = 0;
-const char *file_name = "file.txt";
+char inputs[100];
 
+void get_inputs(char file_name[256])
+{
+  char data[MAX_LINES][MAX_LEN];
+  int line = 0;
+
+  FILE *file;
+  file = fopen(file_name, "r");
+ 
+  while (!feof(file) && !ferror(file)){
+    if (fgets(data[line], MAX_LEN, file) != NULL)
+      line++;
+  }
+   
+  fclose(file);
+  
+  for (int i = 0; i < line; i++){
+    if (data[i][0] == '\n')
+      inputs[i] = '\0';
+    else
+      inputs[i] = data[i][0];
+  }  
+}
 
 char __VERIFIER_nondet_char(){ 
-  FILE *fp = fopen(file_name, "r");
   char value;
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), fp);
   FILE * input_file = fopen("input_xml", "a");
-  value = ptr[seed++];
+  value = inputs[seed++];
   fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
   fclose(input_file);
   return value;
 }
 
-
-
-
-
-
-
-
+unsigned char __VERIFIER_nondet_uchar(void){ 
+  char value;
+  FILE * input_file = fopen("input_xml", "a");
+  value = inputs[seed++];
+  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
+  fclose(input_file);
+  return value;
+}
 
 int __VERIFIER_nondet_int(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char file_content[100];
-  char input[100];
   int value;
-  while (fgets(file_content, sizeof(file_content), stdin));
-  int j;
-  j=0;
-  for (int i =0; i<strlen(file_content); i++){
-    if(file_content[i] != ' ')
-        input[j++] = file_content[i];}
   FILE * input_file = fopen("input_xml", "a");
-  value = input[seed++];
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
+  value = inputs[seed++];
+  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
   fclose(input_file);
   return value;
 }
 
 int __VERIFIER_nondet_uint(){ 
-  FILE *fp = fopen(file_name, "r");
-  char file_content[100];
-  char input[100];
   int value;
-  while (fgets(file_content, sizeof(file_content), fp));
-  int j;
-  j=0;
-  for (int i =0; i<strlen(file_content); i++){
-    if(file_content[i] != ' ')
-        input[j++] = file_content[i];}
   FILE * input_file = fopen("input_xml", "a");
-  value = input[seed++];
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
+  value = inputs[seed++];
+  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
   fclose(input_file);
   return value;
 }
-/*
-_Bool __VERIFIER_nondet_bool(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char file_content[100];
-  char input[100];
-  bool value;
-  while (fgets(file_content, sizeof(file_content), stdin));
-  int j;
-  j=0;
-  for (int i =0; i<strlen(file_content); i++){
-    if(file_content[i] != ' ')
-        input[j++] = file_content[i];}
-  FILE * input_file = fopen("input_xml", "a");
-  value = input[seed++];
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
-  fclose(input_file);
-  return value;
-}*/
 
 
 bool __VERIFIER_nondet_bool(){ 
-  FILE *fp = fopen(file_name, "r");
-  bool value;
-  char ptr[100];
-  fgets(ptr, sizeof(ptr), stdin);
+  int value;
   FILE * input_file = fopen("input_xml", "a");
-  value = ptr[seed++];
+  value = (inputs[seed++] == 48) ? 0 : 1;
   fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
   fclose(input_file);
   return value;
 }
-/*
-char __VERIFIER_nondet_char(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char file_content[100];
-  char input[100];
-  char value;
-  while (fgets(file_content, sizeof(file_content), stdin));
-  int j;
-  j=0;
-  for (int i =0; i<strlen(file_content); i++){
-    if(file_content[i] != ' ')
-        input[j++] = file_content[i];}
-  FILE * input_file = fopen("input_xml", "a");
-  value = input[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
-  return value;
-}*/
 
-char __VERIFIER_nondet_uchar(){ 
-  //FILE *fp = fopen(file_name, "r");
-  char file_content[100];
-  char input[100];
-  char value;
-  while (fgets(file_content, sizeof(file_content), stdin));
-  int j;
-  j=0;
-  for (int i =0; i<strlen(file_content); i++){
-    if(file_content[i] != ' ')
-        input[j++] = file_content[i];}
-  FILE * input_file = fopen("input_xml", "a");
-  value = input[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
-  return value;
-}
 
 void __VERIFIER_error(){
    abort();

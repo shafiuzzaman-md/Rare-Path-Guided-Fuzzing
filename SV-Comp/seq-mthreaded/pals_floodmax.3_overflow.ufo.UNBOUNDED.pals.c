@@ -1,3 +1,4 @@
+#include "svcompwrapper.h"
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "pals_floodmax.3_overflow.ufo.UNBOUNDED.pals.c", 3, "reach_error"); }
@@ -475,11 +476,11 @@ int check(void)
   return (tmp);
 }
 }
-int main(void) 
+int main(int argc, char **argv) 
 { 
   int c1 ;
   int i2 ;
-
+  get_inputs(argv[1]);
   {
   c1 = 0;
   ep12 = __VERIFIER_nondet_bool();
