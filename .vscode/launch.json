@@ -1,11 +1,12 @@
 {
     "configurations": [
+
         {
             "name": "C/C++: gcc build and debug active file",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["file1.txt"],
+            "args": ["random-input"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
