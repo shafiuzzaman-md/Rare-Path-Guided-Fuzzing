@@ -1,7 +1,7 @@
 Run AFL++ on SV-Comp
 Build:
 
-afl-gcc prog.c -o prog.out -fprofile-arcs -ftest-coverage
+```afl-gcc prog.c -o prog.out -fprofile-arcs -ftest-coverage```
 
 Testcases:
 
