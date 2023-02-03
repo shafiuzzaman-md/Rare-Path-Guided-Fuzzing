@@ -9,7 +9,7 @@
 #define MAX_LEN 1000
 
 int seed = 0;
-char inputs[100];
+int inputs[100];
 
 void get_inputs(char file_name[256])
 {
@@ -27,18 +27,16 @@ void get_inputs(char file_name[256])
   fclose(file);
   
   for (int i = 0; i < line; i++){
-      inputs[i] = data[i][0];
+      inputs[i] = data[i][0] - '0';
   }  
 }
 
 char __VERIFIER_nondet_char(){ 
   char value;
-  char c_input;
-  int ascii;
+  int i_input;
   FILE * input_file = fopen("input_xml.xml", "a");
-  c_input = inputs[seed++];
-  ascii = c_input - '0';
-  value = ascii;
+  i_input = inputs[seed++];
+  value = i_input;
   fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
   fclose(input_file);
   return value;
@@ -75,7 +73,7 @@ int __VERIFIER_nondet_uint(){
 bool __VERIFIER_nondet_bool(){ 
   int value;
   FILE * input_file = fopen("input_xml.xml", "a");
-  value = inputs[seed++] - '0';
+  value = inputs[seed++];
   fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
   fclose(input_file);
   return value;
