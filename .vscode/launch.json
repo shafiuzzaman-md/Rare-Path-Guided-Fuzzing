@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["random-input"],
+            "args": ["rare-input.txt"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],

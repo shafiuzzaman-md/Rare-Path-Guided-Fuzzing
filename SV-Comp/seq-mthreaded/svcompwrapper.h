@@ -9,7 +9,7 @@
 #define MAX_LEN 1000
 
 int seed = 0;
-char inputs[100];
+int inputs[100];
 
 void get_inputs(char file_name[256])
 {
@@ -26,57 +26,41 @@ void get_inputs(char file_name[256])
    
   fclose(file);
   
+  char c_input;
   for (int i = 0; i < line; i++){
-    if (data[i][0] == '\n')
-      inputs[i] = '\0';
-    else
-      inputs[i] = data[i][0];
+      c_input = data[i][0];
+      inputs[i] = atoi(&c_input);
   }  
 }
 
 char __VERIFIER_nondet_char(){ 
   char value;
-  FILE * input_file = fopen("input_xml", "a");
-  value = inputs[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
+  value =  inputs[seed++];
   return value;
 }
 
 unsigned char __VERIFIER_nondet_uchar(void){ 
   char value;
-  FILE * input_file = fopen("input_xml", "a");
   value = inputs[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
   return value;
 }
 
 int __VERIFIER_nondet_int(){ 
   int value;
-  FILE * input_file = fopen("input_xml", "a");
   value = inputs[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
   return value;
 }
 
 int __VERIFIER_nondet_uint(){ 
   int value;
-  FILE * input_file = fopen("input_xml", "a");
   value = inputs[seed++];
-  fprintf(input_file, "<input type=\"input\">%c</input>\n", value);
-  fclose(input_file);
   return value;
 }
 
 
 bool __VERIFIER_nondet_bool(){ 
   int value;
-  FILE * input_file = fopen("input_xml", "a");
-  value = (inputs[seed++] == 48) ? 0 : 1;
-  fprintf(input_file, "<input type=\"input\">%d</input>\n", value);
-  fclose(input_file);
+  value = inputs[seed++];
   return value;
 }
 
