@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": ["rare-input.txt"],
+            "args": ["pals_floodmax.3.3.ufo.BOUNDED-6.pals_rare_input.txt"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
