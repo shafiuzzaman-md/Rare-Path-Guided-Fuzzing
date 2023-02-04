@@ -507,7 +507,9 @@ int main(int argc, char **argv)
   max3 = __VERIFIER_nondet_char();
   mode3 = __VERIFIER_nondet_bool();
   i2 = init();
-  if(!(i2)) {abort();}
+  if(!(i2)) {
+    abort();
+    }
   p12_old = nomsg;
   p12_new = nomsg;
   p13_old = nomsg;

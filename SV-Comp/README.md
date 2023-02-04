@@ -1,6 +1,13 @@
 # Run AFL++ on SV-Comp
-## Build:
 
+## Docker: 
+```docker pull mdshafiuzzaman/aflplusplus_rarefuzz:svcomp```
+
+## Build:
+```
+cd ..
+cd aflsvcomp
+```
 ```afl-gcc prog.c -o prog.out -fprofile-arcs -ftest-coverage```
 
 ## Testcases:
