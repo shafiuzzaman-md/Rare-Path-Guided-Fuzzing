@@ -37,7 +37,7 @@ afl-cov  -d out --coverage-cmd \
 # Run FairFuzz on SV-Comp
 
 ## docker
-```docker pull zjuchenyuan/fairfuzz```
+```docker pull mdshafiuzzaman/fairfuzz:svcomp```
 ## Build:
 ```../afl-rb/afl-gcc prog.c svcompwrapper.h -o prog.out -fprofile-arcs -ftest-coverage```
 
