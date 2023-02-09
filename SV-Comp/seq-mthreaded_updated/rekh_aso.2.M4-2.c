@@ -3348,8 +3348,8 @@ void __startrek_hyperperiod(void)
   assert(__startrek_Assert_t0_i0);
 }
 }
-int main(int argc, char **argv) 
-{ 
+ int main(int argc, char **argv) 
+{ get_inputs(argv[1]);
 
 
   {

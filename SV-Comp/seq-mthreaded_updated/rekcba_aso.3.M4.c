@@ -15254,8 +15254,8 @@ void __main(void)
   }
 }
 }
-int main(int argc, char **argv) 
-{ 
+ int main(int argc, char **argv) 
+{ get_inputs(argv[1]);
 
 
   {
