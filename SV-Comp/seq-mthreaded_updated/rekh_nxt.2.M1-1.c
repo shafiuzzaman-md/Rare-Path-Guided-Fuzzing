@@ -1,3 +1,4 @@
+#include "svcompwrapper.h"
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "rekh_nxt.2.M1-1.c", 3, "reach_error"); }
@@ -25,13 +26,13 @@ __inline static void __startrek_assert_i0(_Bool arg ) ;
 __inline static _Bool __startrek_cs_t2(void) ;
 __inline static _Bool __startrek_cs_t1(void) ;
 __inline static _Bool __startrek_cs_t0(void) ;
-_Bool __VERIFIER_nondet_bool(void) ;
-unsigned char __VERIFIER_nondet_uchar(void) ;
-_Bool __VERIFIER_nondet_bool(void) ;
+//_Bool __VERIFIER_nondet_bool(void) ;
+//unsigned char __VERIFIER_nondet_uchar(void) ;
+//_Bool __VERIFIER_nondet_bool(void) ;
 extern int __VERIFIER_nondet_int();
 void abort(void);
 void assume_abort_if_not(int cond) {
-  if(!cond) {abort();}
+  if(!cond) { }
 }
 unsigned char __startrek_round  ;
 unsigned char __startrek_task  ;
@@ -42,7 +43,7 @@ unsigned char __startrek_hyper_period  ;
 #pragma merger(0,"/tmp/aaaa/nxt.bug2.i","-S")
 extern void __startrek_cpu_lock(void) ;
 extern void __startrek_cpu_unlock(void) ;
-void assert(_Bool arg) { if (!arg) { ERROR: {reach_error();abort();}} }
+void assert(_Bool arg) { if (!arg) {// ERROR: {reach_error(); }} }
 static unsigned int ud_err_theta  ;
 static unsigned int ud_psi  ;
 static unsigned int ud_theta_lpf  ;
@@ -2104,7 +2105,7 @@ void __startrek_hyperperiod(void)
   assert(__startrek_Assert_t2_i0);
 }
 }
-int main(void) 
+int main(int argc, char **argv) 
 { 
 
 

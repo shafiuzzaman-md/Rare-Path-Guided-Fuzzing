@@ -1,3 +1,4 @@
+#include "svcompwrapper.h"
 extern void abort(void);
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { __assert_fail("0", "rekh_ctm.4.c", 3, "reach_error"); }
@@ -28,11 +29,11 @@ __inline static _Bool __startrek_cs_t2(void) ;
 __inline static _Bool __startrek_cs_t1(void) ;
 __inline static _Bool __startrek_cs_t0(void) ;
 unsigned short __VERIFIER_nondet_ushort(void) ;
-_Bool __VERIFIER_nondet_bool(void) ;
+//_Bool __VERIFIER_nondet_bool(void) ;
 int __VERIFIER_nondet_int(void) ;
-char __VERIFIER_nondet_char(void) ;
-unsigned char __VERIFIER_nondet_uchar(void) ;
-_Bool __VERIFIER_nondet_bool(void) ;
+//char __VERIFIER_nondet_char(void) ;
+//unsigned char __VERIFIER_nondet_uchar(void) ;
+//_Bool __VERIFIER_nondet_bool(void) ;
 unsigned char __startrek_round  ;
 unsigned char __startrek_task  ;
 unsigned char __startrek_job  ;
@@ -42,8 +43,9 @@ unsigned char __startrek_hyper_period  ;
 #pragma merger(0,"/tmp/aaaa/ctm.ok4.i","-S")
 extern void __startrek_cpu_lock(void) ;
 extern void __startrek_cpu_unlock(void) ;
+#include "svcompwrapper.h"
 extern void abort(void);
-void assert(_Bool arg) { if (!arg) { ERROR: {reach_error();abort();}} }
+void assert(_Bool arg) { if (!arg) {// ERROR: {reach_error(); }} }
 int __startrek_pi_locks_held  =    0;
 char __startrek_task_base_priority  =    0;
 __inline static char __startrek_read___startrek_current_priority(void) ;
@@ -720,7 +722,7 @@ __inline static _Bool __startrek_entry_pt_Controller(void)
   sp = tmp;
   __startrek_lock = 0;
   if ((int )__startrek_base_priority_Controller <= (int )sp) {
-    if(!(0)) {abort();}
+    if(!(0)) { }
     return ((_Bool)0);
   }
   __startrek_lock = 1;
@@ -769,7 +771,7 @@ __inline static _Bool __startrek_entry_pt_TapeMover(void)
   sp = tmp;
   __startrek_lock = 0;
   if ((int )__startrek_base_priority_TapeMover <= (int )sp) {
-    if(!(0)) {abort();}
+    if(!(0)) { }
     return ((_Bool)0);
   }
   __startrek_lock = 1;
@@ -818,7 +820,7 @@ __inline static _Bool __startrek_entry_pt_Reader(void)
   sp = tmp;
   __startrek_lock = 0;
   if ((int )__startrek_base_priority_Reader <= (int )sp) {
-    if(!(0)) {abort();}
+    if(!(0)) { }
     return ((_Bool)0);
   }
   __startrek_lock = 1;
@@ -867,7 +869,7 @@ __inline static _Bool __startrek_entry_pt_Writer(void)
   sp = tmp;
   __startrek_lock = 0;
   if ((int )__startrek_base_priority_Writer <= (int )sp) {
-    if(!(0)) {abort();}
+    if(!(0)) { }
     return ((_Bool)0);
   }
   __startrek_lock = 1;
@@ -930,115 +932,115 @@ __inline void __startrek_schedule_jobs(void)
   __startrek_end[0] = __VERIFIER_nondet_uchar();
   __startrek_min[0] = __VERIFIER_nondet_uchar();
   __startrek_max[0] = __VERIFIER_nondet_uchar();
-  if(!(3 <= __startrek_start[6])) {abort();}
-  if(!(__startrek_end[6] <= 6)) {abort();}
-  if(!(__startrek_start[6] == __startrek_end[6])) {abort();}
-  if(!(__startrek_min[6] == __startrek_start[6])) {abort();}
-  if(!(__startrek_max[6] == __startrek_end[6])) {abort();}
-  if(!(3 <= __startrek_start[5])) {abort();}
-  if(!(__startrek_end[5] <= 6)) {abort();}
-  if(!(__startrek_start[5] <= __startrek_end[5])) {abort();}
+  if(!(3 <= __startrek_start[6])) { }
+  if(!(__startrek_end[6] <= 6)) { }
+  if(!(__startrek_start[6] == __startrek_end[6])) { }
+  if(!(__startrek_min[6] == __startrek_start[6])) { }
+  if(!(__startrek_max[6] == __startrek_end[6])) { }
+  if(!(3 <= __startrek_start[5])) { }
+  if(!(__startrek_end[5] <= 6)) { }
+  if(!(__startrek_start[5] <= __startrek_end[5])) { }
   if (__startrek_start[5] < __startrek_min[6]) {
-    if(!(__startrek_min[5] == __startrek_start[5])) {abort();}
+    if(!(__startrek_min[5] == __startrek_start[5])) { }
   } else {
-    if(!(__startrek_min[5] == __startrek_min[6])) {abort();}
+    if(!(__startrek_min[5] == __startrek_min[6])) { }
   }
   if (__startrek_end[5] > __startrek_max[6]) {
-    if(!(__startrek_max[5] == __startrek_end[5])) {abort();}
+    if(!(__startrek_max[5] == __startrek_end[5])) { }
   } else {
-    if(!(__startrek_max[5] == __startrek_max[6])) {abort();}
+    if(!(__startrek_max[5] == __startrek_max[6])) { }
   }
-  if(!(3 <= __startrek_start[4])) {abort();}
-  if(!(__startrek_end[4] <= 6)) {abort();}
-  if(!(__startrek_start[4] <= __startrek_end[4])) {abort();}
+  if(!(3 <= __startrek_start[4])) { }
+  if(!(__startrek_end[4] <= 6)) { }
+  if(!(__startrek_start[4] <= __startrek_end[4])) { }
   if (__startrek_start[4] < __startrek_min[5]) {
-    if(!(__startrek_min[4] == __startrek_start[4])) {abort();}
+    if(!(__startrek_min[4] == __startrek_start[4])) { }
   } else {
-    if(!(__startrek_min[4] == __startrek_min[5])) {abort();}
+    if(!(__startrek_min[4] == __startrek_min[5])) { }
   }
   if (__startrek_end[4] > __startrek_max[5]) {
-    if(!(__startrek_max[4] == __startrek_end[4])) {abort();}
+    if(!(__startrek_max[4] == __startrek_end[4])) { }
   } else {
-    if(!(__startrek_max[4] == __startrek_max[5])) {abort();}
+    if(!(__startrek_max[4] == __startrek_max[5])) { }
   }
-  if(!(0 <= __startrek_start[3])) {abort();}
-  if(!(__startrek_end[3] <= 3)) {abort();}
-  if(!(__startrek_start[3] == __startrek_end[3])) {abort();}
-  if(!(__startrek_min[3] == __startrek_start[3])) {abort();}
-  if(!(__startrek_max[3] == __startrek_end[3])) {abort();}
-  if(!(0 <= __startrek_start[2])) {abort();}
-  if(!(__startrek_end[2] <= 3)) {abort();}
-  if(!(__startrek_start[2] <= __startrek_end[2])) {abort();}
+  if(!(0 <= __startrek_start[3])) { }
+  if(!(__startrek_end[3] <= 3)) { }
+  if(!(__startrek_start[3] == __startrek_end[3])) { }
+  if(!(__startrek_min[3] == __startrek_start[3])) { }
+  if(!(__startrek_max[3] == __startrek_end[3])) { }
+  if(!(0 <= __startrek_start[2])) { }
+  if(!(__startrek_end[2] <= 3)) { }
+  if(!(__startrek_start[2] <= __startrek_end[2])) { }
   if (__startrek_start[2] < __startrek_min[3]) {
-    if(!(__startrek_min[2] == __startrek_start[2])) {abort();}
+    if(!(__startrek_min[2] == __startrek_start[2])) { }
   } else {
-    if(!(__startrek_min[2] == __startrek_min[3])) {abort();}
+    if(!(__startrek_min[2] == __startrek_min[3])) { }
   }
   if (__startrek_end[2] > __startrek_max[3]) {
-    if(!(__startrek_max[2] == __startrek_end[2])) {abort();}
+    if(!(__startrek_max[2] == __startrek_end[2])) { }
   } else {
-    if(!(__startrek_max[2] == __startrek_max[3])) {abort();}
+    if(!(__startrek_max[2] == __startrek_max[3])) { }
   }
-  if(!(0 <= __startrek_start[1])) {abort();}
-  if(!(__startrek_end[1] <= 3)) {abort();}
-  if(!(__startrek_max[1] < __startrek_min[4])) {abort();}
-  if(!(__startrek_start[1] <= __startrek_end[1])) {abort();}
+  if(!(0 <= __startrek_start[1])) { }
+  if(!(__startrek_end[1] <= 3)) { }
+  if(!(__startrek_max[1] < __startrek_min[4])) { }
+  if(!(__startrek_start[1] <= __startrek_end[1])) { }
   if (__startrek_start[1] < __startrek_min[2]) {
-    if(!(__startrek_min[1] == __startrek_start[1])) {abort();}
+    if(!(__startrek_min[1] == __startrek_start[1])) { }
   } else {
-    if(!(__startrek_min[1] == __startrek_min[2])) {abort();}
+    if(!(__startrek_min[1] == __startrek_min[2])) { }
   }
   if (__startrek_end[1] > __startrek_max[2]) {
-    if(!(__startrek_max[1] == __startrek_end[1])) {abort();}
+    if(!(__startrek_max[1] == __startrek_end[1])) { }
   } else {
-    if(!(__startrek_max[1] == __startrek_max[2])) {abort();}
+    if(!(__startrek_max[1] == __startrek_max[2])) { }
   }
-  if(!(0 <= __startrek_start[0])) {abort();}
-  if(!(__startrek_end[0] <= 6)) {abort();}
-  if(!(__startrek_start[0] <= __startrek_end[0])) {abort();}
+  if(!(0 <= __startrek_start[0])) { }
+  if(!(__startrek_end[0] <= 6)) { }
+  if(!(__startrek_start[0] <= __startrek_end[0])) { }
   if (__startrek_start[0] < __startrek_min[1]) {
-    if(!(__startrek_min[0] == __startrek_start[0])) {abort();}
+    if(!(__startrek_min[0] == __startrek_start[0])) { }
   } else {
-    if(!(__startrek_min[0] == __startrek_min[1])) {abort();}
+    if(!(__startrek_min[0] == __startrek_min[1])) { }
   }
   if (__startrek_end[0] > __startrek_max[4]) {
-    if(!(__startrek_max[0] == __startrek_end[0])) {abort();}
+    if(!(__startrek_max[0] == __startrek_end[0])) { }
   } else {
-    if(!(__startrek_max[0] == __startrek_max[4])) {abort();}
+    if(!(__startrek_max[0] == __startrek_max[4])) { }
   }
-  if(!(__startrek_end[1] < __startrek_start[0])) {abort();}
-  if(!(__startrek_end[2] < __startrek_start[1])) {abort();}
-  if(!(__startrek_end[2] < __startrek_start[0])) {abort();}
-  if(!(__startrek_end[3] < __startrek_start[2])) {abort();}
-  if(!(__startrek_end[3] < __startrek_start[1])) {abort();}
-  if(!(__startrek_end[3] < __startrek_start[0])) {abort();}
-  if(!(__startrek_end[4] <= __startrek_end[0])) {abort();}
+  if(!(__startrek_end[1] < __startrek_start[0])) { }
+  if(!(__startrek_end[2] < __startrek_start[1])) { }
+  if(!(__startrek_end[2] < __startrek_start[0])) { }
+  if(!(__startrek_end[3] < __startrek_start[2])) { }
+  if(!(__startrek_end[3] < __startrek_start[1])) { }
+  if(!(__startrek_end[3] < __startrek_start[0])) { }
+  if(!(__startrek_end[4] <= __startrek_end[0])) { }
   if (__startrek_start[0] <= __startrek_end[4]) {
     if (__startrek_start[4] <= __startrek_end[0]) {
       {
-      if(!(__startrek_start[0] <= __startrek_start[4])) {abort();}
-      if(!(__startrek_end[4] < __startrek_end[0])) {abort();}
+      if(!(__startrek_start[0] <= __startrek_start[4])) { }
+      if(!(__startrek_end[4] < __startrek_end[0])) { }
       }
     }
   }
-  if(!(__startrek_end[5] < __startrek_start[4])) {abort();}
-  if(!(__startrek_end[5] <= __startrek_end[0])) {abort();}
+  if(!(__startrek_end[5] < __startrek_start[4])) { }
+  if(!(__startrek_end[5] <= __startrek_end[0])) { }
   if (__startrek_start[0] <= __startrek_end[5]) {
     if (__startrek_start[5] <= __startrek_end[0]) {
       {
-      if(!(__startrek_start[0] <= __startrek_start[5])) {abort();}
-      if(!(__startrek_end[5] < __startrek_end[0])) {abort();}
+      if(!(__startrek_start[0] <= __startrek_start[5])) { }
+      if(!(__startrek_end[5] < __startrek_end[0])) { }
       }
     }
   }
-  if(!(__startrek_end[6] < __startrek_start[5])) {abort();}
-  if(!(__startrek_end[6] < __startrek_start[4])) {abort();}
-  if(!(__startrek_end[6] <= __startrek_end[0])) {abort();}
+  if(!(__startrek_end[6] < __startrek_start[5])) { }
+  if(!(__startrek_end[6] < __startrek_start[4])) { }
+  if(!(__startrek_end[6] <= __startrek_end[0])) { }
   if (__startrek_start[0] <= __startrek_end[6]) {
     if (__startrek_start[6] <= __startrek_end[0]) {
       {
-      if(!(__startrek_start[0] <= __startrek_start[6])) {abort();}
-      if(!(__startrek_end[6] < __startrek_end[0])) {abort();}
+      if(!(__startrek_start[0] <= __startrek_start[6])) { }
+      if(!(__startrek_end[6] < __startrek_end[0])) { }
       }
     }
   }
@@ -1330,29 +1332,29 @@ __inline static _Bool __startrek_cs_t0(void)
   }
   o2 = __startrek_round;
   __startrek_round = __VERIFIER_nondet_uchar();
-  if(!(__startrek_round > o2)) {abort();}
-  if(!(__startrek_round <= __startrek_job_end)) {abort();}
+  if(!(__startrek_round > o2)) { }
+  if(!(__startrek_round <= __startrek_job_end)) { }
   if (__startrek_round != __startrek_job_end) {
     {
     switch (__startrek_job) {
     case 0: 
     if (__startrek_start[6] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[6])) {abort();}
+      if(!(__startrek_round > __startrek_end[6])) { }
     }
     if (__startrek_start[5] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[5])) {abort();}
+      if(!(__startrek_round > __startrek_end[5])) { }
     }
     if (__startrek_start[4] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[4])) {abort();}
+      if(!(__startrek_round > __startrek_end[4])) { }
     }
     if (__startrek_start[3] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[3])) {abort();}
+      if(!(__startrek_round > __startrek_end[3])) { }
     }
     if (__startrek_start[2] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[2])) {abort();}
+      if(!(__startrek_round > __startrek_end[2])) { }
     }
     if (__startrek_start[1] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[1])) {abort();}
+      if(!(__startrek_round > __startrek_end[1])) { }
     }
     break;
     }
@@ -1376,25 +1378,25 @@ __inline static _Bool __startrek_cs_t1(void)
   }
   o2 = __startrek_round;
   __startrek_round = __VERIFIER_nondet_uchar();
-  if(!(__startrek_round > o2)) {abort();}
-  if(!(__startrek_round <= __startrek_job_end)) {abort();}
+  if(!(__startrek_round > o2)) { }
+  if(!(__startrek_round <= __startrek_job_end)) { }
   if (__startrek_round != __startrek_job_end) {
     {
     switch (__startrek_job) {
     case 4: 
     if (__startrek_start[6] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[6])) {abort();}
+      if(!(__startrek_round > __startrek_end[6])) { }
     }
     if (__startrek_start[5] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[5])) {abort();}
+      if(!(__startrek_round > __startrek_end[5])) { }
     }
     break;
     case 1: 
     if (__startrek_start[3] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[3])) {abort();}
+      if(!(__startrek_round > __startrek_end[3])) { }
     }
     if (__startrek_start[2] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[2])) {abort();}
+      if(!(__startrek_round > __startrek_end[2])) { }
     }
     break;
     }
@@ -1418,19 +1420,19 @@ __inline static _Bool __startrek_cs_t2(void)
   }
   o2 = __startrek_round;
   __startrek_round = __VERIFIER_nondet_uchar();
-  if(!(__startrek_round > o2)) {abort();}
-  if(!(__startrek_round <= __startrek_job_end)) {abort();}
+  if(!(__startrek_round > o2)) { }
+  if(!(__startrek_round <= __startrek_job_end)) { }
   if (__startrek_round != __startrek_job_end) {
     {
     switch (__startrek_job) {
     case 5: 
     if (__startrek_start[6] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[6])) {abort();}
+      if(!(__startrek_round > __startrek_end[6])) { }
     }
     break;
     case 2: 
     if (__startrek_start[3] < __startrek_round) {
-      if(!(__startrek_round > __startrek_end[3])) {abort();}
+      if(!(__startrek_round > __startrek_end[3])) { }
     }
     break;
     }
@@ -1500,103 +1502,103 @@ void __startrek_hyperperiod(void)
   __startrek_job = 3;
   __startrek_Assert_t3_i0 = 1;
   __startrek_entry_pt_Writer();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 0: 
-  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) {abort();}
-  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) {abort();}
-  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) {abort();}
-  if(!(_T_state_[0] == _i_T_state_[1])) {abort();}
-  if(!(_W_state_[0] == _i_W_state_[1])) {abort();}
-  if(!(_R_state_[0] == _i_R_state_[1])) {abort();}
-  if(!(_threshold_[0] == _i_threshold_[1])) {abort();}
-  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) {abort();}
-  if(!(_need_to_read_[0] == _i_need_to_read_[1])) {abort();}
-  if(!(_dir_[0] == _i_dir_[1])) {abort();}
-  if(!(_output_[0] == _i_output_[1])) {abort();}
-  if(!(_input_[0] == _i_input_[1])) {abort();}
-  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) {abort();}
-  if(!(_T_speed_[0] == _i_T_speed_[1])) {abort();}
-  if(!(_T_count_[0] == _i_T_count_[1])) {abort();}
-  if(!(_W_speed_[0] == _i_W_speed_[1])) {abort();}
-  if(!(_W_count_[0] == _i_W_count_[1])) {abort();}
-  if(!(_R_speed_[0] == _i_R_speed_[1])) {abort();}
-  if(!(_R_count_[0] == _i_R_count_[1])) {abort();}
-  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) {abort();}
+  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) { }
+  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) { }
+  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) { }
+  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) { }
+  if(!(_T_state_[0] == _i_T_state_[1])) { }
+  if(!(_W_state_[0] == _i_W_state_[1])) { }
+  if(!(_R_state_[0] == _i_R_state_[1])) { }
+  if(!(_threshold_[0] == _i_threshold_[1])) { }
+  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) { }
+  if(!(_need_to_read_[0] == _i_need_to_read_[1])) { }
+  if(!(_dir_[0] == _i_dir_[1])) { }
+  if(!(_output_[0] == _i_output_[1])) { }
+  if(!(_input_[0] == _i_input_[1])) { }
+  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) { }
+  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) { }
+  if(!(_T_speed_[0] == _i_T_speed_[1])) { }
+  if(!(_T_count_[0] == _i_T_count_[1])) { }
+  if(!(_W_speed_[0] == _i_W_speed_[1])) { }
+  if(!(_W_count_[0] == _i_W_count_[1])) { }
+  if(!(_R_speed_[0] == _i_R_speed_[1])) { }
+  if(!(_R_count_[0] == _i_R_count_[1])) { }
+  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) { }
   break;
   case 1: 
-  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) {abort();}
-  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) {abort();}
-  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) {abort();}
-  if(!(_T_state_[1] == _i_T_state_[2])) {abort();}
-  if(!(_W_state_[1] == _i_W_state_[2])) {abort();}
-  if(!(_R_state_[1] == _i_R_state_[2])) {abort();}
-  if(!(_threshold_[1] == _i_threshold_[2])) {abort();}
-  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) {abort();}
-  if(!(_need_to_read_[1] == _i_need_to_read_[2])) {abort();}
-  if(!(_dir_[1] == _i_dir_[2])) {abort();}
-  if(!(_output_[1] == _i_output_[2])) {abort();}
-  if(!(_input_[1] == _i_input_[2])) {abort();}
-  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) {abort();}
-  if(!(_T_speed_[1] == _i_T_speed_[2])) {abort();}
-  if(!(_T_count_[1] == _i_T_count_[2])) {abort();}
-  if(!(_W_speed_[1] == _i_W_speed_[2])) {abort();}
-  if(!(_W_count_[1] == _i_W_count_[2])) {abort();}
-  if(!(_R_speed_[1] == _i_R_speed_[2])) {abort();}
-  if(!(_R_count_[1] == _i_R_count_[2])) {abort();}
-  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) {abort();}
+  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) { }
+  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) { }
+  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) { }
+  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) { }
+  if(!(_T_state_[1] == _i_T_state_[2])) { }
+  if(!(_W_state_[1] == _i_W_state_[2])) { }
+  if(!(_R_state_[1] == _i_R_state_[2])) { }
+  if(!(_threshold_[1] == _i_threshold_[2])) { }
+  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) { }
+  if(!(_need_to_read_[1] == _i_need_to_read_[2])) { }
+  if(!(_dir_[1] == _i_dir_[2])) { }
+  if(!(_output_[1] == _i_output_[2])) { }
+  if(!(_input_[1] == _i_input_[2])) { }
+  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) { }
+  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) { }
+  if(!(_T_speed_[1] == _i_T_speed_[2])) { }
+  if(!(_T_count_[1] == _i_T_count_[2])) { }
+  if(!(_W_speed_[1] == _i_W_speed_[2])) { }
+  if(!(_W_count_[1] == _i_W_count_[2])) { }
+  if(!(_R_speed_[1] == _i_R_speed_[2])) { }
+  if(!(_R_count_[1] == _i_R_count_[2])) { }
+  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) { }
   break;
   case 2: 
-  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) {abort();}
-  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) {abort();}
-  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) {abort();}
-  if(!(_T_state_[2] == _i_T_state_[3])) {abort();}
-  if(!(_W_state_[2] == _i_W_state_[3])) {abort();}
-  if(!(_R_state_[2] == _i_R_state_[3])) {abort();}
-  if(!(_threshold_[2] == _i_threshold_[3])) {abort();}
-  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) {abort();}
-  if(!(_need_to_read_[2] == _i_need_to_read_[3])) {abort();}
-  if(!(_dir_[2] == _i_dir_[3])) {abort();}
-  if(!(_output_[2] == _i_output_[3])) {abort();}
-  if(!(_input_[2] == _i_input_[3])) {abort();}
-  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) {abort();}
-  if(!(_T_speed_[2] == _i_T_speed_[3])) {abort();}
-  if(!(_T_count_[2] == _i_T_count_[3])) {abort();}
-  if(!(_W_speed_[2] == _i_W_speed_[3])) {abort();}
-  if(!(_W_count_[2] == _i_W_count_[3])) {abort();}
-  if(!(_R_speed_[2] == _i_R_speed_[3])) {abort();}
-  if(!(_R_count_[2] == _i_R_count_[3])) {abort();}
-  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) {abort();}
+  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) { }
+  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) { }
+  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) { }
+  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) { }
+  if(!(_T_state_[2] == _i_T_state_[3])) { }
+  if(!(_W_state_[2] == _i_W_state_[3])) { }
+  if(!(_R_state_[2] == _i_R_state_[3])) { }
+  if(!(_threshold_[2] == _i_threshold_[3])) { }
+  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) { }
+  if(!(_need_to_read_[2] == _i_need_to_read_[3])) { }
+  if(!(_dir_[2] == _i_dir_[3])) { }
+  if(!(_output_[2] == _i_output_[3])) { }
+  if(!(_input_[2] == _i_input_[3])) { }
+  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) { }
+  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) { }
+  if(!(_T_speed_[2] == _i_T_speed_[3])) { }
+  if(!(_T_count_[2] == _i_T_count_[3])) { }
+  if(!(_W_speed_[2] == _i_W_speed_[3])) { }
+  if(!(_W_count_[2] == _i_W_count_[3])) { }
+  if(!(_R_speed_[2] == _i_R_speed_[3])) { }
+  if(!(_R_count_[2] == _i_R_count_[3])) { }
+  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) { }
   break;
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   }
   assert(__startrek_Assert_t3_i0);
@@ -1606,103 +1608,103 @@ void __startrek_hyperperiod(void)
   __startrek_job = 2;
   __startrek_Assert_t2_i0 = 1;
   __startrek_entry_pt_Reader();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 0: 
-  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) {abort();}
-  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) {abort();}
-  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) {abort();}
-  if(!(_T_state_[0] == _i_T_state_[1])) {abort();}
-  if(!(_W_state_[0] == _i_W_state_[1])) {abort();}
-  if(!(_R_state_[0] == _i_R_state_[1])) {abort();}
-  if(!(_threshold_[0] == _i_threshold_[1])) {abort();}
-  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) {abort();}
-  if(!(_need_to_read_[0] == _i_need_to_read_[1])) {abort();}
-  if(!(_dir_[0] == _i_dir_[1])) {abort();}
-  if(!(_output_[0] == _i_output_[1])) {abort();}
-  if(!(_input_[0] == _i_input_[1])) {abort();}
-  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) {abort();}
-  if(!(_T_speed_[0] == _i_T_speed_[1])) {abort();}
-  if(!(_T_count_[0] == _i_T_count_[1])) {abort();}
-  if(!(_W_speed_[0] == _i_W_speed_[1])) {abort();}
-  if(!(_W_count_[0] == _i_W_count_[1])) {abort();}
-  if(!(_R_speed_[0] == _i_R_speed_[1])) {abort();}
-  if(!(_R_count_[0] == _i_R_count_[1])) {abort();}
-  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) {abort();}
+  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) { }
+  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) { }
+  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) { }
+  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) { }
+  if(!(_T_state_[0] == _i_T_state_[1])) { }
+  if(!(_W_state_[0] == _i_W_state_[1])) { }
+  if(!(_R_state_[0] == _i_R_state_[1])) { }
+  if(!(_threshold_[0] == _i_threshold_[1])) { }
+  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) { }
+  if(!(_need_to_read_[0] == _i_need_to_read_[1])) { }
+  if(!(_dir_[0] == _i_dir_[1])) { }
+  if(!(_output_[0] == _i_output_[1])) { }
+  if(!(_input_[0] == _i_input_[1])) { }
+  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) { }
+  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) { }
+  if(!(_T_speed_[0] == _i_T_speed_[1])) { }
+  if(!(_T_count_[0] == _i_T_count_[1])) { }
+  if(!(_W_speed_[0] == _i_W_speed_[1])) { }
+  if(!(_W_count_[0] == _i_W_count_[1])) { }
+  if(!(_R_speed_[0] == _i_R_speed_[1])) { }
+  if(!(_R_count_[0] == _i_R_count_[1])) { }
+  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) { }
   break;
   case 1: 
-  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) {abort();}
-  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) {abort();}
-  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) {abort();}
-  if(!(_T_state_[1] == _i_T_state_[2])) {abort();}
-  if(!(_W_state_[1] == _i_W_state_[2])) {abort();}
-  if(!(_R_state_[1] == _i_R_state_[2])) {abort();}
-  if(!(_threshold_[1] == _i_threshold_[2])) {abort();}
-  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) {abort();}
-  if(!(_need_to_read_[1] == _i_need_to_read_[2])) {abort();}
-  if(!(_dir_[1] == _i_dir_[2])) {abort();}
-  if(!(_output_[1] == _i_output_[2])) {abort();}
-  if(!(_input_[1] == _i_input_[2])) {abort();}
-  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) {abort();}
-  if(!(_T_speed_[1] == _i_T_speed_[2])) {abort();}
-  if(!(_T_count_[1] == _i_T_count_[2])) {abort();}
-  if(!(_W_speed_[1] == _i_W_speed_[2])) {abort();}
-  if(!(_W_count_[1] == _i_W_count_[2])) {abort();}
-  if(!(_R_speed_[1] == _i_R_speed_[2])) {abort();}
-  if(!(_R_count_[1] == _i_R_count_[2])) {abort();}
-  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) {abort();}
+  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) { }
+  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) { }
+  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) { }
+  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) { }
+  if(!(_T_state_[1] == _i_T_state_[2])) { }
+  if(!(_W_state_[1] == _i_W_state_[2])) { }
+  if(!(_R_state_[1] == _i_R_state_[2])) { }
+  if(!(_threshold_[1] == _i_threshold_[2])) { }
+  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) { }
+  if(!(_need_to_read_[1] == _i_need_to_read_[2])) { }
+  if(!(_dir_[1] == _i_dir_[2])) { }
+  if(!(_output_[1] == _i_output_[2])) { }
+  if(!(_input_[1] == _i_input_[2])) { }
+  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) { }
+  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) { }
+  if(!(_T_speed_[1] == _i_T_speed_[2])) { }
+  if(!(_T_count_[1] == _i_T_count_[2])) { }
+  if(!(_W_speed_[1] == _i_W_speed_[2])) { }
+  if(!(_W_count_[1] == _i_W_count_[2])) { }
+  if(!(_R_speed_[1] == _i_R_speed_[2])) { }
+  if(!(_R_count_[1] == _i_R_count_[2])) { }
+  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) { }
   break;
   case 2: 
-  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) {abort();}
-  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) {abort();}
-  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) {abort();}
-  if(!(_T_state_[2] == _i_T_state_[3])) {abort();}
-  if(!(_W_state_[2] == _i_W_state_[3])) {abort();}
-  if(!(_R_state_[2] == _i_R_state_[3])) {abort();}
-  if(!(_threshold_[2] == _i_threshold_[3])) {abort();}
-  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) {abort();}
-  if(!(_need_to_read_[2] == _i_need_to_read_[3])) {abort();}
-  if(!(_dir_[2] == _i_dir_[3])) {abort();}
-  if(!(_output_[2] == _i_output_[3])) {abort();}
-  if(!(_input_[2] == _i_input_[3])) {abort();}
-  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) {abort();}
-  if(!(_T_speed_[2] == _i_T_speed_[3])) {abort();}
-  if(!(_T_count_[2] == _i_T_count_[3])) {abort();}
-  if(!(_W_speed_[2] == _i_W_speed_[3])) {abort();}
-  if(!(_W_count_[2] == _i_W_count_[3])) {abort();}
-  if(!(_R_speed_[2] == _i_R_speed_[3])) {abort();}
-  if(!(_R_count_[2] == _i_R_count_[3])) {abort();}
-  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) {abort();}
+  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) { }
+  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) { }
+  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) { }
+  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) { }
+  if(!(_T_state_[2] == _i_T_state_[3])) { }
+  if(!(_W_state_[2] == _i_W_state_[3])) { }
+  if(!(_R_state_[2] == _i_R_state_[3])) { }
+  if(!(_threshold_[2] == _i_threshold_[3])) { }
+  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) { }
+  if(!(_need_to_read_[2] == _i_need_to_read_[3])) { }
+  if(!(_dir_[2] == _i_dir_[3])) { }
+  if(!(_output_[2] == _i_output_[3])) { }
+  if(!(_input_[2] == _i_input_[3])) { }
+  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) { }
+  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) { }
+  if(!(_T_speed_[2] == _i_T_speed_[3])) { }
+  if(!(_T_count_[2] == _i_T_count_[3])) { }
+  if(!(_W_speed_[2] == _i_W_speed_[3])) { }
+  if(!(_W_count_[2] == _i_W_count_[3])) { }
+  if(!(_R_speed_[2] == _i_R_speed_[3])) { }
+  if(!(_R_count_[2] == _i_R_count_[3])) { }
+  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) { }
   break;
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   }
   assert(__startrek_Assert_t2_i0);
@@ -1712,103 +1714,103 @@ void __startrek_hyperperiod(void)
   __startrek_job = 1;
   __startrek_Assert_t1_i0 = 1;
   __startrek_entry_pt_TapeMover();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 0: 
-  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) {abort();}
-  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) {abort();}
-  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) {abort();}
-  if(!(_T_state_[0] == _i_T_state_[1])) {abort();}
-  if(!(_W_state_[0] == _i_W_state_[1])) {abort();}
-  if(!(_R_state_[0] == _i_R_state_[1])) {abort();}
-  if(!(_threshold_[0] == _i_threshold_[1])) {abort();}
-  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) {abort();}
-  if(!(_need_to_read_[0] == _i_need_to_read_[1])) {abort();}
-  if(!(_dir_[0] == _i_dir_[1])) {abort();}
-  if(!(_output_[0] == _i_output_[1])) {abort();}
-  if(!(_input_[0] == _i_input_[1])) {abort();}
-  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) {abort();}
-  if(!(_T_speed_[0] == _i_T_speed_[1])) {abort();}
-  if(!(_T_count_[0] == _i_T_count_[1])) {abort();}
-  if(!(_W_speed_[0] == _i_W_speed_[1])) {abort();}
-  if(!(_W_count_[0] == _i_W_count_[1])) {abort();}
-  if(!(_R_speed_[0] == _i_R_speed_[1])) {abort();}
-  if(!(_R_count_[0] == _i_R_count_[1])) {abort();}
-  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) {abort();}
+  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) { }
+  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) { }
+  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) { }
+  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) { }
+  if(!(_T_state_[0] == _i_T_state_[1])) { }
+  if(!(_W_state_[0] == _i_W_state_[1])) { }
+  if(!(_R_state_[0] == _i_R_state_[1])) { }
+  if(!(_threshold_[0] == _i_threshold_[1])) { }
+  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) { }
+  if(!(_need_to_read_[0] == _i_need_to_read_[1])) { }
+  if(!(_dir_[0] == _i_dir_[1])) { }
+  if(!(_output_[0] == _i_output_[1])) { }
+  if(!(_input_[0] == _i_input_[1])) { }
+  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) { }
+  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) { }
+  if(!(_T_speed_[0] == _i_T_speed_[1])) { }
+  if(!(_T_count_[0] == _i_T_count_[1])) { }
+  if(!(_W_speed_[0] == _i_W_speed_[1])) { }
+  if(!(_W_count_[0] == _i_W_count_[1])) { }
+  if(!(_R_speed_[0] == _i_R_speed_[1])) { }
+  if(!(_R_count_[0] == _i_R_count_[1])) { }
+  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) { }
   break;
   case 1: 
-  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) {abort();}
-  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) {abort();}
-  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) {abort();}
-  if(!(_T_state_[1] == _i_T_state_[2])) {abort();}
-  if(!(_W_state_[1] == _i_W_state_[2])) {abort();}
-  if(!(_R_state_[1] == _i_R_state_[2])) {abort();}
-  if(!(_threshold_[1] == _i_threshold_[2])) {abort();}
-  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) {abort();}
-  if(!(_need_to_read_[1] == _i_need_to_read_[2])) {abort();}
-  if(!(_dir_[1] == _i_dir_[2])) {abort();}
-  if(!(_output_[1] == _i_output_[2])) {abort();}
-  if(!(_input_[1] == _i_input_[2])) {abort();}
-  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) {abort();}
-  if(!(_T_speed_[1] == _i_T_speed_[2])) {abort();}
-  if(!(_T_count_[1] == _i_T_count_[2])) {abort();}
-  if(!(_W_speed_[1] == _i_W_speed_[2])) {abort();}
-  if(!(_W_count_[1] == _i_W_count_[2])) {abort();}
-  if(!(_R_speed_[1] == _i_R_speed_[2])) {abort();}
-  if(!(_R_count_[1] == _i_R_count_[2])) {abort();}
-  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) {abort();}
+  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) { }
+  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) { }
+  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) { }
+  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) { }
+  if(!(_T_state_[1] == _i_T_state_[2])) { }
+  if(!(_W_state_[1] == _i_W_state_[2])) { }
+  if(!(_R_state_[1] == _i_R_state_[2])) { }
+  if(!(_threshold_[1] == _i_threshold_[2])) { }
+  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) { }
+  if(!(_need_to_read_[1] == _i_need_to_read_[2])) { }
+  if(!(_dir_[1] == _i_dir_[2])) { }
+  if(!(_output_[1] == _i_output_[2])) { }
+  if(!(_input_[1] == _i_input_[2])) { }
+  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) { }
+  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) { }
+  if(!(_T_speed_[1] == _i_T_speed_[2])) { }
+  if(!(_T_count_[1] == _i_T_count_[2])) { }
+  if(!(_W_speed_[1] == _i_W_speed_[2])) { }
+  if(!(_W_count_[1] == _i_W_count_[2])) { }
+  if(!(_R_speed_[1] == _i_R_speed_[2])) { }
+  if(!(_R_count_[1] == _i_R_count_[2])) { }
+  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) { }
   break;
   case 2: 
-  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) {abort();}
-  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) {abort();}
-  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) {abort();}
-  if(!(_T_state_[2] == _i_T_state_[3])) {abort();}
-  if(!(_W_state_[2] == _i_W_state_[3])) {abort();}
-  if(!(_R_state_[2] == _i_R_state_[3])) {abort();}
-  if(!(_threshold_[2] == _i_threshold_[3])) {abort();}
-  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) {abort();}
-  if(!(_need_to_read_[2] == _i_need_to_read_[3])) {abort();}
-  if(!(_dir_[2] == _i_dir_[3])) {abort();}
-  if(!(_output_[2] == _i_output_[3])) {abort();}
-  if(!(_input_[2] == _i_input_[3])) {abort();}
-  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) {abort();}
-  if(!(_T_speed_[2] == _i_T_speed_[3])) {abort();}
-  if(!(_T_count_[2] == _i_T_count_[3])) {abort();}
-  if(!(_W_speed_[2] == _i_W_speed_[3])) {abort();}
-  if(!(_W_count_[2] == _i_W_count_[3])) {abort();}
-  if(!(_R_speed_[2] == _i_R_speed_[3])) {abort();}
-  if(!(_R_count_[2] == _i_R_count_[3])) {abort();}
-  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) {abort();}
+  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) { }
+  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) { }
+  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) { }
+  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) { }
+  if(!(_T_state_[2] == _i_T_state_[3])) { }
+  if(!(_W_state_[2] == _i_W_state_[3])) { }
+  if(!(_R_state_[2] == _i_R_state_[3])) { }
+  if(!(_threshold_[2] == _i_threshold_[3])) { }
+  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) { }
+  if(!(_need_to_read_[2] == _i_need_to_read_[3])) { }
+  if(!(_dir_[2] == _i_dir_[3])) { }
+  if(!(_output_[2] == _i_output_[3])) { }
+  if(!(_input_[2] == _i_input_[3])) { }
+  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) { }
+  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) { }
+  if(!(_T_speed_[2] == _i_T_speed_[3])) { }
+  if(!(_T_count_[2] == _i_T_count_[3])) { }
+  if(!(_W_speed_[2] == _i_W_speed_[3])) { }
+  if(!(_W_count_[2] == _i_W_count_[3])) { }
+  if(!(_R_speed_[2] == _i_R_speed_[3])) { }
+  if(!(_R_count_[2] == _i_R_count_[3])) { }
+  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) { }
   break;
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   }
   assert(__startrek_Assert_t1_i0);
@@ -1818,151 +1820,151 @@ void __startrek_hyperperiod(void)
   __startrek_job = 0;
   __startrek_Assert_t0_i0 = 1;
   __startrek_entry_pt_Controller();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 0: 
-  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) {abort();}
-  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) {abort();}
-  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) {abort();}
-  if(!(_T_state_[0] == _i_T_state_[1])) {abort();}
-  if(!(_W_state_[0] == _i_W_state_[1])) {abort();}
-  if(!(_R_state_[0] == _i_R_state_[1])) {abort();}
-  if(!(_threshold_[0] == _i_threshold_[1])) {abort();}
-  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) {abort();}
-  if(!(_need_to_read_[0] == _i_need_to_read_[1])) {abort();}
-  if(!(_dir_[0] == _i_dir_[1])) {abort();}
-  if(!(_output_[0] == _i_output_[1])) {abort();}
-  if(!(_input_[0] == _i_input_[1])) {abort();}
-  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) {abort();}
-  if(!(_T_speed_[0] == _i_T_speed_[1])) {abort();}
-  if(!(_T_count_[0] == _i_T_count_[1])) {abort();}
-  if(!(_W_speed_[0] == _i_W_speed_[1])) {abort();}
-  if(!(_W_count_[0] == _i_W_count_[1])) {abort();}
-  if(!(_R_speed_[0] == _i_R_speed_[1])) {abort();}
-  if(!(_R_count_[0] == _i_R_count_[1])) {abort();}
-  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) {abort();}
+  if(!(___startrek_job_count_Writer_[0] == _i___startrek_job_count_Writer_[1])) { }
+  if(!(___startrek_job_count_Reader_[0] == _i___startrek_job_count_Reader_[1])) { }
+  if(!(___startrek_job_count_TapeMover_[0] == _i___startrek_job_count_TapeMover_[1])) { }
+  if(!(___startrek_job_count_Controller_[0] == _i___startrek_job_count_Controller_[1])) { }
+  if(!(_T_state_[0] == _i_T_state_[1])) { }
+  if(!(_W_state_[0] == _i_W_state_[1])) { }
+  if(!(_R_state_[0] == _i_R_state_[1])) { }
+  if(!(_threshold_[0] == _i_threshold_[1])) { }
+  if(!(_need_to_run_nxtbg_[0] == _i_need_to_run_nxtbg_[1])) { }
+  if(!(_need_to_read_[0] == _i_need_to_read_[1])) { }
+  if(!(_dir_[0] == _i_dir_[1])) { }
+  if(!(_output_[0] == _i_output_[1])) { }
+  if(!(_input_[0] == _i_input_[1])) { }
+  if(!(_nxtcolorsensor_mode_[0] == _i_nxtcolorsensor_mode_[1])) { }
+  if(!(_nxtcolorsensor_data_mode_[0] == _i_nxtcolorsensor_data_mode_[1])) { }
+  if(!(_T_speed_[0] == _i_T_speed_[1])) { }
+  if(!(_T_count_[0] == _i_T_count_[1])) { }
+  if(!(_W_speed_[0] == _i_W_speed_[1])) { }
+  if(!(_W_count_[0] == _i_W_count_[1])) { }
+  if(!(_R_speed_[0] == _i_R_speed_[1])) { }
+  if(!(_R_count_[0] == _i_R_count_[1])) { }
+  if(!(___startrek_current_priority_[0] == _i___startrek_current_priority_[1])) { }
   break;
   case 1: 
-  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) {abort();}
-  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) {abort();}
-  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) {abort();}
-  if(!(_T_state_[1] == _i_T_state_[2])) {abort();}
-  if(!(_W_state_[1] == _i_W_state_[2])) {abort();}
-  if(!(_R_state_[1] == _i_R_state_[2])) {abort();}
-  if(!(_threshold_[1] == _i_threshold_[2])) {abort();}
-  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) {abort();}
-  if(!(_need_to_read_[1] == _i_need_to_read_[2])) {abort();}
-  if(!(_dir_[1] == _i_dir_[2])) {abort();}
-  if(!(_output_[1] == _i_output_[2])) {abort();}
-  if(!(_input_[1] == _i_input_[2])) {abort();}
-  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) {abort();}
-  if(!(_T_speed_[1] == _i_T_speed_[2])) {abort();}
-  if(!(_T_count_[1] == _i_T_count_[2])) {abort();}
-  if(!(_W_speed_[1] == _i_W_speed_[2])) {abort();}
-  if(!(_W_count_[1] == _i_W_count_[2])) {abort();}
-  if(!(_R_speed_[1] == _i_R_speed_[2])) {abort();}
-  if(!(_R_count_[1] == _i_R_count_[2])) {abort();}
-  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) {abort();}
+  if(!(___startrek_job_count_Writer_[1] == _i___startrek_job_count_Writer_[2])) { }
+  if(!(___startrek_job_count_Reader_[1] == _i___startrek_job_count_Reader_[2])) { }
+  if(!(___startrek_job_count_TapeMover_[1] == _i___startrek_job_count_TapeMover_[2])) { }
+  if(!(___startrek_job_count_Controller_[1] == _i___startrek_job_count_Controller_[2])) { }
+  if(!(_T_state_[1] == _i_T_state_[2])) { }
+  if(!(_W_state_[1] == _i_W_state_[2])) { }
+  if(!(_R_state_[1] == _i_R_state_[2])) { }
+  if(!(_threshold_[1] == _i_threshold_[2])) { }
+  if(!(_need_to_run_nxtbg_[1] == _i_need_to_run_nxtbg_[2])) { }
+  if(!(_need_to_read_[1] == _i_need_to_read_[2])) { }
+  if(!(_dir_[1] == _i_dir_[2])) { }
+  if(!(_output_[1] == _i_output_[2])) { }
+  if(!(_input_[1] == _i_input_[2])) { }
+  if(!(_nxtcolorsensor_mode_[1] == _i_nxtcolorsensor_mode_[2])) { }
+  if(!(_nxtcolorsensor_data_mode_[1] == _i_nxtcolorsensor_data_mode_[2])) { }
+  if(!(_T_speed_[1] == _i_T_speed_[2])) { }
+  if(!(_T_count_[1] == _i_T_count_[2])) { }
+  if(!(_W_speed_[1] == _i_W_speed_[2])) { }
+  if(!(_W_count_[1] == _i_W_count_[2])) { }
+  if(!(_R_speed_[1] == _i_R_speed_[2])) { }
+  if(!(_R_count_[1] == _i_R_count_[2])) { }
+  if(!(___startrek_current_priority_[1] == _i___startrek_current_priority_[2])) { }
   break;
   case 2: 
-  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) {abort();}
-  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) {abort();}
-  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) {abort();}
-  if(!(_T_state_[2] == _i_T_state_[3])) {abort();}
-  if(!(_W_state_[2] == _i_W_state_[3])) {abort();}
-  if(!(_R_state_[2] == _i_R_state_[3])) {abort();}
-  if(!(_threshold_[2] == _i_threshold_[3])) {abort();}
-  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) {abort();}
-  if(!(_need_to_read_[2] == _i_need_to_read_[3])) {abort();}
-  if(!(_dir_[2] == _i_dir_[3])) {abort();}
-  if(!(_output_[2] == _i_output_[3])) {abort();}
-  if(!(_input_[2] == _i_input_[3])) {abort();}
-  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) {abort();}
-  if(!(_T_speed_[2] == _i_T_speed_[3])) {abort();}
-  if(!(_T_count_[2] == _i_T_count_[3])) {abort();}
-  if(!(_W_speed_[2] == _i_W_speed_[3])) {abort();}
-  if(!(_W_count_[2] == _i_W_count_[3])) {abort();}
-  if(!(_R_speed_[2] == _i_R_speed_[3])) {abort();}
-  if(!(_R_count_[2] == _i_R_count_[3])) {abort();}
-  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) {abort();}
+  if(!(___startrek_job_count_Writer_[2] == _i___startrek_job_count_Writer_[3])) { }
+  if(!(___startrek_job_count_Reader_[2] == _i___startrek_job_count_Reader_[3])) { }
+  if(!(___startrek_job_count_TapeMover_[2] == _i___startrek_job_count_TapeMover_[3])) { }
+  if(!(___startrek_job_count_Controller_[2] == _i___startrek_job_count_Controller_[3])) { }
+  if(!(_T_state_[2] == _i_T_state_[3])) { }
+  if(!(_W_state_[2] == _i_W_state_[3])) { }
+  if(!(_R_state_[2] == _i_R_state_[3])) { }
+  if(!(_threshold_[2] == _i_threshold_[3])) { }
+  if(!(_need_to_run_nxtbg_[2] == _i_need_to_run_nxtbg_[3])) { }
+  if(!(_need_to_read_[2] == _i_need_to_read_[3])) { }
+  if(!(_dir_[2] == _i_dir_[3])) { }
+  if(!(_output_[2] == _i_output_[3])) { }
+  if(!(_input_[2] == _i_input_[3])) { }
+  if(!(_nxtcolorsensor_mode_[2] == _i_nxtcolorsensor_mode_[3])) { }
+  if(!(_nxtcolorsensor_data_mode_[2] == _i_nxtcolorsensor_data_mode_[3])) { }
+  if(!(_T_speed_[2] == _i_T_speed_[3])) { }
+  if(!(_T_count_[2] == _i_T_count_[3])) { }
+  if(!(_W_speed_[2] == _i_W_speed_[3])) { }
+  if(!(_W_count_[2] == _i_W_count_[3])) { }
+  if(!(_R_speed_[2] == _i_R_speed_[3])) { }
+  if(!(_R_count_[2] == _i_R_count_[3])) { }
+  if(!(___startrek_current_priority_[2] == _i___startrek_current_priority_[3])) { }
   break;
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   case 4: 
-  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) {abort();}
-  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) {abort();}
-  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) {abort();}
-  if(!(_T_state_[4] == _i_T_state_[5])) {abort();}
-  if(!(_W_state_[4] == _i_W_state_[5])) {abort();}
-  if(!(_R_state_[4] == _i_R_state_[5])) {abort();}
-  if(!(_threshold_[4] == _i_threshold_[5])) {abort();}
-  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) {abort();}
-  if(!(_need_to_read_[4] == _i_need_to_read_[5])) {abort();}
-  if(!(_dir_[4] == _i_dir_[5])) {abort();}
-  if(!(_output_[4] == _i_output_[5])) {abort();}
-  if(!(_input_[4] == _i_input_[5])) {abort();}
-  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) {abort();}
-  if(!(_T_speed_[4] == _i_T_speed_[5])) {abort();}
-  if(!(_T_count_[4] == _i_T_count_[5])) {abort();}
-  if(!(_W_speed_[4] == _i_W_speed_[5])) {abort();}
-  if(!(_W_count_[4] == _i_W_count_[5])) {abort();}
-  if(!(_R_speed_[4] == _i_R_speed_[5])) {abort();}
-  if(!(_R_count_[4] == _i_R_count_[5])) {abort();}
-  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) {abort();}
+  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) { }
+  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) { }
+  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) { }
+  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) { }
+  if(!(_T_state_[4] == _i_T_state_[5])) { }
+  if(!(_W_state_[4] == _i_W_state_[5])) { }
+  if(!(_R_state_[4] == _i_R_state_[5])) { }
+  if(!(_threshold_[4] == _i_threshold_[5])) { }
+  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) { }
+  if(!(_need_to_read_[4] == _i_need_to_read_[5])) { }
+  if(!(_dir_[4] == _i_dir_[5])) { }
+  if(!(_output_[4] == _i_output_[5])) { }
+  if(!(_input_[4] == _i_input_[5])) { }
+  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) { }
+  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) { }
+  if(!(_T_speed_[4] == _i_T_speed_[5])) { }
+  if(!(_T_count_[4] == _i_T_count_[5])) { }
+  if(!(_W_speed_[4] == _i_W_speed_[5])) { }
+  if(!(_W_count_[4] == _i_W_count_[5])) { }
+  if(!(_R_speed_[4] == _i_R_speed_[5])) { }
+  if(!(_R_count_[4] == _i_R_count_[5])) { }
+  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) { }
   break;
   case 5: 
-  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) {abort();}
-  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) {abort();}
-  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) {abort();}
-  if(!(_T_state_[5] == _i_T_state_[6])) {abort();}
-  if(!(_W_state_[5] == _i_W_state_[6])) {abort();}
-  if(!(_R_state_[5] == _i_R_state_[6])) {abort();}
-  if(!(_threshold_[5] == _i_threshold_[6])) {abort();}
-  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) {abort();}
-  if(!(_need_to_read_[5] == _i_need_to_read_[6])) {abort();}
-  if(!(_dir_[5] == _i_dir_[6])) {abort();}
-  if(!(_output_[5] == _i_output_[6])) {abort();}
-  if(!(_input_[5] == _i_input_[6])) {abort();}
-  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) {abort();}
-  if(!(_T_speed_[5] == _i_T_speed_[6])) {abort();}
-  if(!(_T_count_[5] == _i_T_count_[6])) {abort();}
-  if(!(_W_speed_[5] == _i_W_speed_[6])) {abort();}
-  if(!(_W_count_[5] == _i_W_count_[6])) {abort();}
-  if(!(_R_speed_[5] == _i_R_speed_[6])) {abort();}
-  if(!(_R_count_[5] == _i_R_count_[6])) {abort();}
-  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) {abort();}
+  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) { }
+  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) { }
+  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) { }
+  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) { }
+  if(!(_T_state_[5] == _i_T_state_[6])) { }
+  if(!(_W_state_[5] == _i_W_state_[6])) { }
+  if(!(_R_state_[5] == _i_R_state_[6])) { }
+  if(!(_threshold_[5] == _i_threshold_[6])) { }
+  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) { }
+  if(!(_need_to_read_[5] == _i_need_to_read_[6])) { }
+  if(!(_dir_[5] == _i_dir_[6])) { }
+  if(!(_output_[5] == _i_output_[6])) { }
+  if(!(_input_[5] == _i_input_[6])) { }
+  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) { }
+  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) { }
+  if(!(_T_speed_[5] == _i_T_speed_[6])) { }
+  if(!(_T_count_[5] == _i_T_count_[6])) { }
+  if(!(_W_speed_[5] == _i_W_speed_[6])) { }
+  if(!(_W_count_[5] == _i_W_count_[6])) { }
+  if(!(_R_speed_[5] == _i_R_speed_[6])) { }
+  if(!(_R_count_[5] == _i_R_count_[6])) { }
+  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) { }
   break;
   }
 
@@ -1972,79 +1974,79 @@ void __startrek_hyperperiod(void)
   __startrek_job = 6;
   __startrek_Assert_t3_i0 = 1;
   __startrek_entry_pt_Writer();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   case 4: 
-  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) {abort();}
-  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) {abort();}
-  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) {abort();}
-  if(!(_T_state_[4] == _i_T_state_[5])) {abort();}
-  if(!(_W_state_[4] == _i_W_state_[5])) {abort();}
-  if(!(_R_state_[4] == _i_R_state_[5])) {abort();}
-  if(!(_threshold_[4] == _i_threshold_[5])) {abort();}
-  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) {abort();}
-  if(!(_need_to_read_[4] == _i_need_to_read_[5])) {abort();}
-  if(!(_dir_[4] == _i_dir_[5])) {abort();}
-  if(!(_output_[4] == _i_output_[5])) {abort();}
-  if(!(_input_[4] == _i_input_[5])) {abort();}
-  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) {abort();}
-  if(!(_T_speed_[4] == _i_T_speed_[5])) {abort();}
-  if(!(_T_count_[4] == _i_T_count_[5])) {abort();}
-  if(!(_W_speed_[4] == _i_W_speed_[5])) {abort();}
-  if(!(_W_count_[4] == _i_W_count_[5])) {abort();}
-  if(!(_R_speed_[4] == _i_R_speed_[5])) {abort();}
-  if(!(_R_count_[4] == _i_R_count_[5])) {abort();}
-  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) {abort();}
+  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) { }
+  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) { }
+  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) { }
+  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) { }
+  if(!(_T_state_[4] == _i_T_state_[5])) { }
+  if(!(_W_state_[4] == _i_W_state_[5])) { }
+  if(!(_R_state_[4] == _i_R_state_[5])) { }
+  if(!(_threshold_[4] == _i_threshold_[5])) { }
+  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) { }
+  if(!(_need_to_read_[4] == _i_need_to_read_[5])) { }
+  if(!(_dir_[4] == _i_dir_[5])) { }
+  if(!(_output_[4] == _i_output_[5])) { }
+  if(!(_input_[4] == _i_input_[5])) { }
+  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) { }
+  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) { }
+  if(!(_T_speed_[4] == _i_T_speed_[5])) { }
+  if(!(_T_count_[4] == _i_T_count_[5])) { }
+  if(!(_W_speed_[4] == _i_W_speed_[5])) { }
+  if(!(_W_count_[4] == _i_W_count_[5])) { }
+  if(!(_R_speed_[4] == _i_R_speed_[5])) { }
+  if(!(_R_count_[4] == _i_R_count_[5])) { }
+  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) { }
   break;
   case 5: 
-  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) {abort();}
-  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) {abort();}
-  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) {abort();}
-  if(!(_T_state_[5] == _i_T_state_[6])) {abort();}
-  if(!(_W_state_[5] == _i_W_state_[6])) {abort();}
-  if(!(_R_state_[5] == _i_R_state_[6])) {abort();}
-  if(!(_threshold_[5] == _i_threshold_[6])) {abort();}
-  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) {abort();}
-  if(!(_need_to_read_[5] == _i_need_to_read_[6])) {abort();}
-  if(!(_dir_[5] == _i_dir_[6])) {abort();}
-  if(!(_output_[5] == _i_output_[6])) {abort();}
-  if(!(_input_[5] == _i_input_[6])) {abort();}
-  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) {abort();}
-  if(!(_T_speed_[5] == _i_T_speed_[6])) {abort();}
-  if(!(_T_count_[5] == _i_T_count_[6])) {abort();}
-  if(!(_W_speed_[5] == _i_W_speed_[6])) {abort();}
-  if(!(_W_count_[5] == _i_W_count_[6])) {abort();}
-  if(!(_R_speed_[5] == _i_R_speed_[6])) {abort();}
-  if(!(_R_count_[5] == _i_R_count_[6])) {abort();}
-  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) {abort();}
+  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) { }
+  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) { }
+  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) { }
+  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) { }
+  if(!(_T_state_[5] == _i_T_state_[6])) { }
+  if(!(_W_state_[5] == _i_W_state_[6])) { }
+  if(!(_R_state_[5] == _i_R_state_[6])) { }
+  if(!(_threshold_[5] == _i_threshold_[6])) { }
+  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) { }
+  if(!(_need_to_read_[5] == _i_need_to_read_[6])) { }
+  if(!(_dir_[5] == _i_dir_[6])) { }
+  if(!(_output_[5] == _i_output_[6])) { }
+  if(!(_input_[5] == _i_input_[6])) { }
+  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) { }
+  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) { }
+  if(!(_T_speed_[5] == _i_T_speed_[6])) { }
+  if(!(_T_count_[5] == _i_T_count_[6])) { }
+  if(!(_W_speed_[5] == _i_W_speed_[6])) { }
+  if(!(_W_count_[5] == _i_W_count_[6])) { }
+  if(!(_R_speed_[5] == _i_R_speed_[6])) { }
+  if(!(_R_count_[5] == _i_R_count_[6])) { }
+  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) { }
   break;
   }
   assert(__startrek_Assert_t3_i0);
@@ -2054,79 +2056,79 @@ void __startrek_hyperperiod(void)
   __startrek_job = 5;
   __startrek_Assert_t2_i0 = 1;
   __startrek_entry_pt_Reader();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   case 4: 
-  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) {abort();}
-  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) {abort();}
-  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) {abort();}
-  if(!(_T_state_[4] == _i_T_state_[5])) {abort();}
-  if(!(_W_state_[4] == _i_W_state_[5])) {abort();}
-  if(!(_R_state_[4] == _i_R_state_[5])) {abort();}
-  if(!(_threshold_[4] == _i_threshold_[5])) {abort();}
-  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) {abort();}
-  if(!(_need_to_read_[4] == _i_need_to_read_[5])) {abort();}
-  if(!(_dir_[4] == _i_dir_[5])) {abort();}
-  if(!(_output_[4] == _i_output_[5])) {abort();}
-  if(!(_input_[4] == _i_input_[5])) {abort();}
-  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) {abort();}
-  if(!(_T_speed_[4] == _i_T_speed_[5])) {abort();}
-  if(!(_T_count_[4] == _i_T_count_[5])) {abort();}
-  if(!(_W_speed_[4] == _i_W_speed_[5])) {abort();}
-  if(!(_W_count_[4] == _i_W_count_[5])) {abort();}
-  if(!(_R_speed_[4] == _i_R_speed_[5])) {abort();}
-  if(!(_R_count_[4] == _i_R_count_[5])) {abort();}
-  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) {abort();}
+  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) { }
+  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) { }
+  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) { }
+  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) { }
+  if(!(_T_state_[4] == _i_T_state_[5])) { }
+  if(!(_W_state_[4] == _i_W_state_[5])) { }
+  if(!(_R_state_[4] == _i_R_state_[5])) { }
+  if(!(_threshold_[4] == _i_threshold_[5])) { }
+  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) { }
+  if(!(_need_to_read_[4] == _i_need_to_read_[5])) { }
+  if(!(_dir_[4] == _i_dir_[5])) { }
+  if(!(_output_[4] == _i_output_[5])) { }
+  if(!(_input_[4] == _i_input_[5])) { }
+  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) { }
+  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) { }
+  if(!(_T_speed_[4] == _i_T_speed_[5])) { }
+  if(!(_T_count_[4] == _i_T_count_[5])) { }
+  if(!(_W_speed_[4] == _i_W_speed_[5])) { }
+  if(!(_W_count_[4] == _i_W_count_[5])) { }
+  if(!(_R_speed_[4] == _i_R_speed_[5])) { }
+  if(!(_R_count_[4] == _i_R_count_[5])) { }
+  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) { }
   break;
   case 5: 
-  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) {abort();}
-  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) {abort();}
-  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) {abort();}
-  if(!(_T_state_[5] == _i_T_state_[6])) {abort();}
-  if(!(_W_state_[5] == _i_W_state_[6])) {abort();}
-  if(!(_R_state_[5] == _i_R_state_[6])) {abort();}
-  if(!(_threshold_[5] == _i_threshold_[6])) {abort();}
-  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) {abort();}
-  if(!(_need_to_read_[5] == _i_need_to_read_[6])) {abort();}
-  if(!(_dir_[5] == _i_dir_[6])) {abort();}
-  if(!(_output_[5] == _i_output_[6])) {abort();}
-  if(!(_input_[5] == _i_input_[6])) {abort();}
-  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) {abort();}
-  if(!(_T_speed_[5] == _i_T_speed_[6])) {abort();}
-  if(!(_T_count_[5] == _i_T_count_[6])) {abort();}
-  if(!(_W_speed_[5] == _i_W_speed_[6])) {abort();}
-  if(!(_W_count_[5] == _i_W_count_[6])) {abort();}
-  if(!(_R_speed_[5] == _i_R_speed_[6])) {abort();}
-  if(!(_R_count_[5] == _i_R_count_[6])) {abort();}
-  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) {abort();}
+  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) { }
+  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) { }
+  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) { }
+  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) { }
+  if(!(_T_state_[5] == _i_T_state_[6])) { }
+  if(!(_W_state_[5] == _i_W_state_[6])) { }
+  if(!(_R_state_[5] == _i_R_state_[6])) { }
+  if(!(_threshold_[5] == _i_threshold_[6])) { }
+  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) { }
+  if(!(_need_to_read_[5] == _i_need_to_read_[6])) { }
+  if(!(_dir_[5] == _i_dir_[6])) { }
+  if(!(_output_[5] == _i_output_[6])) { }
+  if(!(_input_[5] == _i_input_[6])) { }
+  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) { }
+  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) { }
+  if(!(_T_speed_[5] == _i_T_speed_[6])) { }
+  if(!(_T_count_[5] == _i_T_count_[6])) { }
+  if(!(_W_speed_[5] == _i_W_speed_[6])) { }
+  if(!(_W_count_[5] == _i_W_count_[6])) { }
+  if(!(_R_speed_[5] == _i_R_speed_[6])) { }
+  if(!(_R_count_[5] == _i_R_count_[6])) { }
+  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) { }
   break;
   }
   assert(__startrek_Assert_t2_i0);
@@ -2136,86 +2138,86 @@ void __startrek_hyperperiod(void)
   __startrek_job = 4;
   __startrek_Assert_t1_i0 = 1;
   __startrek_entry_pt_TapeMover();
-  if(!(__startrek_round == __startrek_job_end)) {abort();}
+  if(!(__startrek_round == __startrek_job_end)) { }
   switch (__startrek_job_end) {
   case 3: 
-  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) {abort();}
-  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) {abort();}
-  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) {abort();}
-  if(!(_T_state_[3] == _i_T_state_[4])) {abort();}
-  if(!(_W_state_[3] == _i_W_state_[4])) {abort();}
-  if(!(_R_state_[3] == _i_R_state_[4])) {abort();}
-  if(!(_threshold_[3] == _i_threshold_[4])) {abort();}
-  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) {abort();}
-  if(!(_need_to_read_[3] == _i_need_to_read_[4])) {abort();}
-  if(!(_dir_[3] == _i_dir_[4])) {abort();}
-  if(!(_output_[3] == _i_output_[4])) {abort();}
-  if(!(_input_[3] == _i_input_[4])) {abort();}
-  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) {abort();}
-  if(!(_T_speed_[3] == _i_T_speed_[4])) {abort();}
-  if(!(_T_count_[3] == _i_T_count_[4])) {abort();}
-  if(!(_W_speed_[3] == _i_W_speed_[4])) {abort();}
-  if(!(_W_count_[3] == _i_W_count_[4])) {abort();}
-  if(!(_R_speed_[3] == _i_R_speed_[4])) {abort();}
-  if(!(_R_count_[3] == _i_R_count_[4])) {abort();}
-  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) {abort();}
+  if(!(___startrek_job_count_Writer_[3] == _i___startrek_job_count_Writer_[4])) { }
+  if(!(___startrek_job_count_Reader_[3] == _i___startrek_job_count_Reader_[4])) { }
+  if(!(___startrek_job_count_TapeMover_[3] == _i___startrek_job_count_TapeMover_[4])) { }
+  if(!(___startrek_job_count_Controller_[3] == _i___startrek_job_count_Controller_[4])) { }
+  if(!(_T_state_[3] == _i_T_state_[4])) { }
+  if(!(_W_state_[3] == _i_W_state_[4])) { }
+  if(!(_R_state_[3] == _i_R_state_[4])) { }
+  if(!(_threshold_[3] == _i_threshold_[4])) { }
+  if(!(_need_to_run_nxtbg_[3] == _i_need_to_run_nxtbg_[4])) { }
+  if(!(_need_to_read_[3] == _i_need_to_read_[4])) { }
+  if(!(_dir_[3] == _i_dir_[4])) { }
+  if(!(_output_[3] == _i_output_[4])) { }
+  if(!(_input_[3] == _i_input_[4])) { }
+  if(!(_nxtcolorsensor_mode_[3] == _i_nxtcolorsensor_mode_[4])) { }
+  if(!(_nxtcolorsensor_data_mode_[3] == _i_nxtcolorsensor_data_mode_[4])) { }
+  if(!(_T_speed_[3] == _i_T_speed_[4])) { }
+  if(!(_T_count_[3] == _i_T_count_[4])) { }
+  if(!(_W_speed_[3] == _i_W_speed_[4])) { }
+  if(!(_W_count_[3] == _i_W_count_[4])) { }
+  if(!(_R_speed_[3] == _i_R_speed_[4])) { }
+  if(!(_R_count_[3] == _i_R_count_[4])) { }
+  if(!(___startrek_current_priority_[3] == _i___startrek_current_priority_[4])) { }
   break;
   case 4: 
-  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) {abort();}
-  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) {abort();}
-  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) {abort();}
-  if(!(_T_state_[4] == _i_T_state_[5])) {abort();}
-  if(!(_W_state_[4] == _i_W_state_[5])) {abort();}
-  if(!(_R_state_[4] == _i_R_state_[5])) {abort();}
-  if(!(_threshold_[4] == _i_threshold_[5])) {abort();}
-  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) {abort();}
-  if(!(_need_to_read_[4] == _i_need_to_read_[5])) {abort();}
-  if(!(_dir_[4] == _i_dir_[5])) {abort();}
-  if(!(_output_[4] == _i_output_[5])) {abort();}
-  if(!(_input_[4] == _i_input_[5])) {abort();}
-  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) {abort();}
-  if(!(_T_speed_[4] == _i_T_speed_[5])) {abort();}
-  if(!(_T_count_[4] == _i_T_count_[5])) {abort();}
-  if(!(_W_speed_[4] == _i_W_speed_[5])) {abort();}
-  if(!(_W_count_[4] == _i_W_count_[5])) {abort();}
-  if(!(_R_speed_[4] == _i_R_speed_[5])) {abort();}
-  if(!(_R_count_[4] == _i_R_count_[5])) {abort();}
-  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) {abort();}
+  if(!(___startrek_job_count_Writer_[4] == _i___startrek_job_count_Writer_[5])) { }
+  if(!(___startrek_job_count_Reader_[4] == _i___startrek_job_count_Reader_[5])) { }
+  if(!(___startrek_job_count_TapeMover_[4] == _i___startrek_job_count_TapeMover_[5])) { }
+  if(!(___startrek_job_count_Controller_[4] == _i___startrek_job_count_Controller_[5])) { }
+  if(!(_T_state_[4] == _i_T_state_[5])) { }
+  if(!(_W_state_[4] == _i_W_state_[5])) { }
+  if(!(_R_state_[4] == _i_R_state_[5])) { }
+  if(!(_threshold_[4] == _i_threshold_[5])) { }
+  if(!(_need_to_run_nxtbg_[4] == _i_need_to_run_nxtbg_[5])) { }
+  if(!(_need_to_read_[4] == _i_need_to_read_[5])) { }
+  if(!(_dir_[4] == _i_dir_[5])) { }
+  if(!(_output_[4] == _i_output_[5])) { }
+  if(!(_input_[4] == _i_input_[5])) { }
+  if(!(_nxtcolorsensor_mode_[4] == _i_nxtcolorsensor_mode_[5])) { }
+  if(!(_nxtcolorsensor_data_mode_[4] == _i_nxtcolorsensor_data_mode_[5])) { }
+  if(!(_T_speed_[4] == _i_T_speed_[5])) { }
+  if(!(_T_count_[4] == _i_T_count_[5])) { }
+  if(!(_W_speed_[4] == _i_W_speed_[5])) { }
+  if(!(_W_count_[4] == _i_W_count_[5])) { }
+  if(!(_R_speed_[4] == _i_R_speed_[5])) { }
+  if(!(_R_count_[4] == _i_R_count_[5])) { }
+  if(!(___startrek_current_priority_[4] == _i___startrek_current_priority_[5])) { }
   break;
   case 5: 
-  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) {abort();}
-  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) {abort();}
-  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) {abort();}
-  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) {abort();}
-  if(!(_T_state_[5] == _i_T_state_[6])) {abort();}
-  if(!(_W_state_[5] == _i_W_state_[6])) {abort();}
-  if(!(_R_state_[5] == _i_R_state_[6])) {abort();}
-  if(!(_threshold_[5] == _i_threshold_[6])) {abort();}
-  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) {abort();}
-  if(!(_need_to_read_[5] == _i_need_to_read_[6])) {abort();}
-  if(!(_dir_[5] == _i_dir_[6])) {abort();}
-  if(!(_output_[5] == _i_output_[6])) {abort();}
-  if(!(_input_[5] == _i_input_[6])) {abort();}
-  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) {abort();}
-  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) {abort();}
-  if(!(_T_speed_[5] == _i_T_speed_[6])) {abort();}
-  if(!(_T_count_[5] == _i_T_count_[6])) {abort();}
-  if(!(_W_speed_[5] == _i_W_speed_[6])) {abort();}
-  if(!(_W_count_[5] == _i_W_count_[6])) {abort();}
-  if(!(_R_speed_[5] == _i_R_speed_[6])) {abort();}
-  if(!(_R_count_[5] == _i_R_count_[6])) {abort();}
-  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) {abort();}
+  if(!(___startrek_job_count_Writer_[5] == _i___startrek_job_count_Writer_[6])) { }
+  if(!(___startrek_job_count_Reader_[5] == _i___startrek_job_count_Reader_[6])) { }
+  if(!(___startrek_job_count_TapeMover_[5] == _i___startrek_job_count_TapeMover_[6])) { }
+  if(!(___startrek_job_count_Controller_[5] == _i___startrek_job_count_Controller_[6])) { }
+  if(!(_T_state_[5] == _i_T_state_[6])) { }
+  if(!(_W_state_[5] == _i_W_state_[6])) { }
+  if(!(_R_state_[5] == _i_R_state_[6])) { }
+  if(!(_threshold_[5] == _i_threshold_[6])) { }
+  if(!(_need_to_run_nxtbg_[5] == _i_need_to_run_nxtbg_[6])) { }
+  if(!(_need_to_read_[5] == _i_need_to_read_[6])) { }
+  if(!(_dir_[5] == _i_dir_[6])) { }
+  if(!(_output_[5] == _i_output_[6])) { }
+  if(!(_input_[5] == _i_input_[6])) { }
+  if(!(_nxtcolorsensor_mode_[5] == _i_nxtcolorsensor_mode_[6])) { }
+  if(!(_nxtcolorsensor_data_mode_[5] == _i_nxtcolorsensor_data_mode_[6])) { }
+  if(!(_T_speed_[5] == _i_T_speed_[6])) { }
+  if(!(_T_count_[5] == _i_T_count_[6])) { }
+  if(!(_W_speed_[5] == _i_W_speed_[6])) { }
+  if(!(_W_count_[5] == _i_W_count_[6])) { }
+  if(!(_R_speed_[5] == _i_R_speed_[6])) { }
+  if(!(_R_count_[5] == _i_R_count_[6])) { }
+  if(!(___startrek_current_priority_[5] == _i___startrek_current_priority_[6])) { }
   break;
   }
   assert(__startrek_Assert_t1_i0);
   assert(__startrek_Assert_t0_i0);
 }
 }
-int main(void) 
+int main(int argc, char **argv) 
 { 
 
 
