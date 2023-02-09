@@ -17,7 +17,7 @@ void reach_error() { __assert_fail("0", "pals_STARTPALS_ActiveStandby.ufo.BOUNDE
 //char __VERIFIER_nondet_char(void) ;
 //char __VERIFIER_nondet_char(void) ;
 //_Bool __VERIFIER_nondet_bool(void) ;
-typedef char int8_t;
+//typedef char int8_t;
 typedef int8_t msg_t;
 typedef int port_t;
 extern void read(port_t p , msg_t m ) ;
