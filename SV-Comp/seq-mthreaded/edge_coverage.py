@@ -62,12 +62,12 @@ for time,filename in sorted_log_dict.items():
 
 	log += str(total_count) + "\n"
 
-print(log)
+#print(log)
 command = "echo \"" + log + "\" > coverage_log.txt"
 os.system(command)
 
 
-min_log = ""
+min_log =  sys.argv[1] + "\ntime (min)\tedge covered\n"
 log_lines = log.split("\n")
 min_to_compare = 1
 last_coverage = 0
@@ -80,14 +80,16 @@ for line in log_lines:
         continue
     coverage = int(line_split[1])
     time_in_min = time_in_ms / (60000)
-    print(time_in_min)
+    #print(time_in_min)
     if time_in_min >= min_to_compare:
         min_log += str(min_to_compare) + "\t" + str(coverage) + "\n"
         min_to_compare += 1
     last_coverage = coverage
+    if time_in_min > 10:
+        break
 if min_to_compare <10:
     min_log += str(min_to_compare) + "\t" + str(last_coverage)
-
-command = "echo \"" + min_log + "\" > coverage_data"
+print(min_log)
+command = "echo \"" + min_log + "\" >> ../../coverage_data"
 os.system(command)
 
