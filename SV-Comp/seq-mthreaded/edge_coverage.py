@@ -4,6 +4,11 @@ import os
 import time
 import sys
 
+
+dir = sys.argv[1] + "_out" + "/default/"
+os.chdir(dir)
+
+
 queue_out = r'queue_out'
 if not os.path.exists(queue_out):
   os.makedirs(queue_out)
@@ -26,9 +31,9 @@ for filename in os.listdir("queue_out"):
     if not "out" in filename:
         continue
     if "time:" in filename:
-    	log_key = int(filename.split("time:")[1].split(",")[0])
-    	log_val = filename
-    	log_dict[log_key] = log_val
+        log_key = int(filename.split("time:")[1].split(",")[0])
+        log_val = filename
+        log_dict[log_key] = log_val
 
 sorted_log_dict = dict(sorted(log_dict.items(), key=lambda item: item[0]))
 
