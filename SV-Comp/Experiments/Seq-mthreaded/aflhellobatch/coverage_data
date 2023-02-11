@@ -1,0 +1,438 @@
+pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	57
+2	73
+3	90
+4	102
+5	108
+6	115
+7	115
+pals_STARTPALS_ActiveStandby.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	65
+2	92
+3	93
+4	102
+5	103
+6	104
+7	106
+8	111
+9	116
+
+pals_STARTPALS_Triplicated.1.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	0
+pals_STARTPALS_Triplicated.2.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	0
+pals_STARTPALS_Triplicated.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	0
+pals_floodmax.5.4.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	218
+2	224
+3	230
+4	231
+5	284
+6	307
+7	310
+8	312
+9	312
+
+pals_floodmax.5.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	202
+2	204
+3	275
+4	312
+5	318
+6	322
+7	322
+8	322
+9	322
+
+pals_lcr-var-start-time.3.2.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	104
+2	112
+3	123
+4	123
+5	129
+6	130
+7	131
+8	132
+9	133
+
+pals_lcr-var-start-time.3.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	111
+2	116
+3	125
+4	127
+5	133
+6	133
+7	134
+8	135
+9	135
+
+pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	131
+2	137
+3	140
+4	150
+5	150
+6	154
+7	154
+8	155
+9	155
+
+pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	122
+2	134
+3	143
+4	146
+5	149
+6	155
+7	155
+8	155
+9	155
+pals_lcr-var-start-time.4.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	107
+2	130
+3	132
+4	136
+5	146
+6	152
+7	157
+8	157
+9	160
+
+pals_lcr-var-start-time.5.1.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	117
+2	123
+3	130
+4	130
+5	130
+6	134
+7	134
+8	138
+9	147
+
+pals_lcr-var-start-time.5.2.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	131
+2	135
+3	137
+4	139
+5	139
+6	139
+7	159
+8	159
+9	159
+
+pals_lcr-var-start-time.5.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	125
+2	130
+3	135
+4	137
+5	149
+6	161
+7	161
+8	161
+9	161
+
+pals_lcr-var-start-time.6.1.ufo.BOUNDED-12.pals.c
+time (min)	edge covered
+1	88
+2	104
+3	132
+4	138
+5	138
+6	142
+7	142
+8	167
+9	176
+
+pals_lcr-var-start-time.6.2.ufo.BOUNDED-12.pals.c
+time (min)	edge covered
+1	75
+2	90
+3	135
+4	140
+5	143
+6	146
+7	150
+8	156
+9	167
+
+pals_lcr-var-start-time.6.ufo.BOUNDED-12.pals.c
+time (min)	edge covered
+1	37
+2	37
+pals_lcr.3.1.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	93
+2	95
+3	98
+4	99
+5	101
+6	108
+7	109
+8	109
+9	109
+
+pals_lcr.3.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	91
+2	97
+3	105
+4	112
+5	112
+pals_lcr.4.1.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	95
+2	106
+3	109
+4	110
+5	119
+6	124
+7	126
+8	126
+pals_lcr.4.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	96
+2	106
+3	110
+4	112
+5	115
+6	122
+7	123
+8	123
+9	126
+
+pals_lcr.5.1.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	80
+2	94
+3	96
+4	97
+5	101
+6	108
+7	130
+8	130
+9	130
+
+pals_lcr.5.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	82
+2	83
+3	84
+4	86
+5	87
+6	88
+7	88
+pals_lcr.6.1.ufo.BOUNDED-12.pals.c
+time (min)	edge covered
+1	33
+2	79
+3	89
+4	96
+5	109
+6	109
+7	140
+8	142
+9	142
+
+pals_lcr.6.ufo.BOUNDED-12.pals.c
+time (min)	edge covered
+1	67
+2	89
+3	91
+4	93
+5	103
+6	113
+7	146
+8	146
+9	146
+pals_lcr.7.1.ufo.BOUNDED-14.pals.c
+time (min)	edge covered
+1	52
+2	88
+3	94
+4	101
+5	112
+6	112
+7	148
+8	157
+9	159
+
+pals_lcr.7.ufo.BOUNDED-14.pals.c
+time (min)	edge covered
+1	82
+2	91
+3	93
+4	95
+5	107
+6	113
+7	123
+8	142
+9	159
+
+pals_lcr.8.1.ufo.BOUNDED-16.pals.c
+time (min)	edge covered
+1	137
+2	143
+3	146
+4	153
+5	168
+6	171
+7	180
+8	181
+9	181
+
+pals_lcr.8.ufo.BOUNDED-16.pals.c
+time (min)	edge covered
+1	147
+2	153
+3	155
+4	157
+5	158
+6	162
+7	166
+8	169
+9	171
+
+pals_opt-floodmax.3.1.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	142
+2	144
+3	160
+4	163
+5	168
+6	178
+7	178
+8	178
+9	183
+
+pals_opt-floodmax.3.2.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	138
+2	152
+3	153
+4	153
+5	154
+6	163
+7	163
+8	165
+9	186
+
+pals_opt-floodmax.3.3.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	145
+2	149
+3	163
+4	178
+5	186
+6	186
+7	188
+8	189
+9	189
+
+pals_opt-floodmax.3.4.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	144
+2	145
+3	147
+4	150
+5	153
+6	160
+7	162
+8	164
+9	164
+
+pals_opt-floodmax.3.ufo.BOUNDED-6.pals.c
+time (min)	edge covered
+1	104
+2	108
+3	109
+4	123
+5	147
+6	148
+7	157
+8	157
+9	159
+
+pals_opt-floodmax.4.1.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	226
+2	226
+3	239
+4	245
+5	245
+pals_opt-floodmax.4.2.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	183
+2	188
+3	191
+4	194
+5	218
+6	231
+7	233
+8	233
+9	235
+
+pals_opt-floodmax.4.3.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	170
+2	195
+3	197
+4	213
+5	214
+6	228
+7	228
+8	230
+9	232
+
+pals_opt-floodmax.4.4.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	162
+2	168
+3	187
+4	203
+5	204
+6	227
+7	231
+8	231
+9	231
+
+pals_opt-floodmax.4.ufo.BOUNDED-8.pals.c
+time (min)	edge covered
+1	187
+2	188
+3	189
+4	190
+5	191
+6	231
+7	233
+8	233
+9	269
+
+pals_opt-floodmax.5.1.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	83
+2	87
+3	174
+4	183
+5	283
+6	313
+7	313
+pals_opt-floodmax.5.2.ufo.BOUNDED-10.pals.c
+time (min)	edge covered
+1	87
+2	87
