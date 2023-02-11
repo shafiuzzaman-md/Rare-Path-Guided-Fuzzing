@@ -1,0 +1,3 @@
+afl_cov_pid     : 19924
+afl_cov_version : 0.7.0
+command_line    : /usr/local/bin/afl-cov -d pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_out --coverage-cmd cat AFL_FILE |  ./pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c.out @@ --code-dir . --enable-branch-coverage --overwrite

@@ -1,0 +1,49 @@
+[1;92m[+] [0mCaptured 29 tuples (map size 8388608, highest value 2, total values 31) in 'pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 29 tuples (map size 8388608, highest value 2, total values 31) in 'pals_STARTPALS_ActiveStandby.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+[1;92m[+] [0mCaptured 66 tuples (map size 8388608, highest value 4, total values 171) in 'pals_floodmax.5.4.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 66 tuples (map size 8388608, highest value 4, total values 175) in 'pals_floodmax.5.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 33 tuples (map size 8388608, highest value 3, total values 68) in 'pals_lcr-var-start-time.3.2.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 33 tuples (map size 8388608, highest value 3, total values 68) in 'pals_lcr-var-start-time.3.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 38 tuples (map size 8388608, highest value 4, total values 106) in 'pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 38 tuples (map size 8388608, highest value 4, total values 106) in 'pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 38 tuples (map size 8388608, highest value 4, total values 106) in 'pals_lcr-var-start-time.4.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 17 tuples (map size 8388608, highest value 4, total values 24) in 'pals_lcr-var-start-time.5.1.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 17 tuples (map size 8388608, highest value 4, total values 24) in 'pals_lcr-var-start-time.5.2.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 17 tuples (map size 8388608, highest value 4, total values 24) in 'pals_lcr-var-start-time.5.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr-var-start-time.6.1.ufo.BOUNDED-12.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr-var-start-time.6.2.ufo.BOUNDED-12.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr-var-start-time.6.ufo.BOUNDED-12.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 46 tuples (map size 8388608, highest value 3, total values 107) in 'pals_lcr.3.1.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 47 tuples (map size 8388608, highest value 3, total values 110) in 'pals_lcr.3.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 56 tuples (map size 8388608, highest value 4, total values 178) in 'pals_lcr.4.1.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 57 tuples (map size 8388608, highest value 4, total values 182) in 'pals_lcr.4.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 17 tuples (map size 8388608, highest value 4, total values 24) in 'pals_lcr.5.1.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 17 tuples (map size 8388608, highest value 4, total values 24) in 'pals_lcr.5.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr.6.1.ufo.BOUNDED-12.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr.6.ufo.BOUNDED-12.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr.7.1.ufo.BOUNDED-14.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 15 tuples (map size 8388608, highest value 2, total values 16) in 'pals_lcr.7.ufo.BOUNDED-14.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 94 tuples (map size 8388608, highest value 5, total values 411) in 'pals_lcr.8.1.ufo.BOUNDED-16.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 95 tuples (map size 8388608, highest value 5, total values 416) in 'pals_lcr.8.ufo.BOUNDED-16.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 60 tuples (map size 8388608, highest value 5, total values 116) in 'pals_opt-floodmax.3.1.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 60 tuples (map size 8388608, highest value 5, total values 116) in 'pals_opt-floodmax.3.2.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 60 tuples (map size 8388608, highest value 5, total values 116) in 'pals_opt-floodmax.3.3.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 60 tuples (map size 8388608, highest value 5, total values 116) in 'pals_opt-floodmax.3.4.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 60 tuples (map size 8388608, highest value 5, total values 116) in 'pals_opt-floodmax.3.ufo.BOUNDED-6.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 81 tuples (map size 8388608, highest value 4, total values 219) in 'pals_opt-floodmax.4.1.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 81 tuples (map size 8388608, highest value 4, total values 219) in 'pals_opt-floodmax.4.2.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 81 tuples (map size 8388608, highest value 4, total values 219) in 'pals_opt-floodmax.4.3.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 81 tuples (map size 8388608, highest value 4, total values 216) in 'pals_opt-floodmax.4.4.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 81 tuples (map size 8388608, highest value 4, total values 219) in 'pals_opt-floodmax.4.ufo.BOUNDED-8.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 66 tuples (map size 8388608, highest value 4, total values 175) in 'pals_opt-floodmax.5.1.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+[1;92m[+] [0mCaptured 66 tuples (map size 8388608, highest value 4, total values 175) in 'pals_opt-floodmax.5.2.ufo.BOUNDED-10.pals.c_tuple'.[0m[0m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m
+)B[?25h[0m[1;91m

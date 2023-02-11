@@ -1,0 +1,3 @@
+diff id:000039,src:000019,time:351183,execs:8183,op:havoc,rep:4,+cov -> id:000040,src:000019,time:386017,execs:8970,op:havoc,rep:8,+cov
+Src file: /aflhellobatch/pals_floodmax.5.4.ufo.BOUNDED-10.pals.c
+  New 'line' coverage: 504

@@ -1,0 +1,20 @@
+diff id:000009,src:000000,time:18052,execs:419,op:havoc,rep:16,+cov -> id:000010,src:000000,time:39796,execs:928,op:havoc,rep:16,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.5.1.ufo.BOUNDED-10.pals.c
+  New 'line' coverage: 173
+  New 'line' coverage: 174
+  New 'line' coverage: 176
+  New 'line' coverage: 179
+  New 'line' coverage: 209
+  New 'line' coverage: 212
+  New 'line' coverage: 213
+  New 'line' coverage: 222
+  New 'line' coverage: 243
+  New 'line' coverage: 246
+  New 'line' coverage: 256
+  New 'line' coverage: 277
+  New 'line' coverage: 278
+  New 'line' coverage: 290
+  New 'line' coverage: 311
+  New 'line' coverage: 312
+  New 'line' coverage: 314
+  New 'line' coverage: 324

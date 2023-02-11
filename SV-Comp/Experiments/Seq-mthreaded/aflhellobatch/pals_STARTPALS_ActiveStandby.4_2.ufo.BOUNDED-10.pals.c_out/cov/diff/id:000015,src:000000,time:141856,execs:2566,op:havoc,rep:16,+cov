@@ -1,0 +1,12 @@
+diff id:000014,src:000000,time:101808,execs:1862,op:havoc,rep:16,+cov -> id:000015,src:000000,time:141856,execs:2566,op:havoc,rep:16,+cov
+Src file: /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c
+  New 'line' coverage: 369
+  New 'line' coverage: 370
+  New 'line' coverage: 371
+  New 'line' coverage: 372
+  New 'line' coverage: 373
+  New 'line' coverage: 426
+  New 'line' coverage: 427
+  New 'line' coverage: 428
+  New 'line' coverage: 429
+  New 'line' coverage: 430

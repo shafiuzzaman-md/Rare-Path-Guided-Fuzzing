@@ -1,0 +1,7 @@
+# environment variables:
+AFL_I_DONT_CARE_ABOUT_MISSING_CRASHES=1
+AFL_KILL_SIGNAL=9
+AFL_TRY_AFFINITY=1
+AFL_SKIP_CPUFREQ=1
+# command line:
+'/usr/local/bin/afl-fuzz' '-i' 'hello_in/' '-o' 'pals_STARTPALS_Triplicated.2.ufo.BOUNDED-10.pals.c_out' './pals_STARTPALS_Triplicated.2.ufo.BOUNDED-10.pals.c.out' '@@'

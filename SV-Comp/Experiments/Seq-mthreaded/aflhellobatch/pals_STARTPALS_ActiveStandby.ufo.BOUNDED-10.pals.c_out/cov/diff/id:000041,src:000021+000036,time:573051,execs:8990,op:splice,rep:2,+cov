@@ -1,0 +1,8 @@
+diff id:000040,src:000037,time:510494,execs:7852,op:havoc,rep:4 -> id:000041,src:000021+000036,time:573051,execs:8990,op:splice,rep:2,+cov
+Src file: /aflhellobatch/pals_STARTPALS_ActiveStandby.ufo.BOUNDED-10.pals.c
+  New 'line' coverage: 327
+  New 'line' coverage: 329
+  New 'line' coverage: 335
+  New 'line' coverage: 337
+  New 'line' coverage: 401
+  New 'line' coverage: 458

@@ -1,0 +1,465 @@
+
+*** Imported 59 new test cases from: pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_out/default/queue
+
+[+] AFL test case: id:000000,time:0,execs:0,orig:hello.txt (0 / 59), cycle: 0
+    lines......: 0.6% (137 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.2% (30 of 15950 branches)
+
+    Coverage diff (init) id:000000,time:0,execs:0,orig:hello.txt
+diff (init) -> id:000000,time:0,execs:0,orig:hello.txt
+New src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'function' coverage: __VERIFIER_nondet_bool()
+  New 'function' coverage: __VERIFIER_nondet_char()
+  New 'function' coverage: get_inputs()
+  New 'function' coverage: main()
+  New 'function' coverage: node1()
+  New 'function' coverage: node2()
+  New 'function' coverage: node3()
+  New 'function' coverage: node4()
+  New 'line' coverage: 14
+  New 'line' coverage: 150
+  New 'line' coverage: 152
+  New 'line' coverage: 155
+  New 'line' coverage: 156
+  New 'line' coverage: 157
+  New 'line' coverage: 158
+  New 'line' coverage: 159
+  New 'line' coverage: 16
+  New 'line' coverage: 160
+  New 'line' coverage: 17
+  New 'line' coverage: 174
+  New 'line' coverage: 176
+  New 'line' coverage: 179
+  New 'line' coverage: 182
+  New 'line' coverage: 184
+  New 'line' coverage: 187
+  New 'line' coverage: 189
+  New 'line' coverage: 19
+  New 'line' coverage: 192
+  New 'line' coverage: 193
+  New 'line' coverage: 194
+  New 'line' coverage: 195
+  New 'line' coverage: 196
+  New 'line' coverage: 20
+  New 'line' coverage: 208
+  New 'line' coverage: 210
+  New 'line' coverage: 213
+  New 'line' coverage: 216
+  New 'line' coverage: 218
+  New 'line' coverage: 22
+  New 'line' coverage: 221
+  New 'line' coverage: 223
+  New 'line' coverage: 226
+  New 'line' coverage: 227
+  New 'line' coverage: 228
+  New 'line' coverage: 229
+  New 'line' coverage: 23
+  New 'line' coverage: 230
+  New 'line' coverage: 24
+  New 'line' coverage: 242
+  New 'line' coverage: 244
+  New 'line' coverage: 247
+  New 'line' coverage: 250
+  New 'line' coverage: 252
+  New 'line' coverage: 255
+  New 'line' coverage: 257
+  New 'line' coverage: 260
+  New 'line' coverage: 261
+  New 'line' coverage: 262
+  New 'line' coverage: 263
+  New 'line' coverage: 264
+  New 'line' coverage: 27
+  New 'line' coverage: 276
+  New 'line' coverage: 278
+  New 'line' coverage: 281
+  New 'line' coverage: 284
+  New 'line' coverage: 286
+  New 'line' coverage: 29
+  New 'line' coverage: 30
+  New 'line' coverage: 32
+  New 'line' coverage: 34
+  New 'line' coverage: 35
+  New 'line' coverage: 36
+  New 'line' coverage: 37
+  New 'line' coverage: 38
+  New 'line' coverage: 39
+  New 'line' coverage: 394
+  New 'line' coverage: 396
+  New 'line' coverage: 40
+  New 'line' coverage: 41
+  New 'line' coverage: 411
+  New 'line' coverage: 414
+  New 'line' coverage: 415
+  New 'line' coverage: 416
+  New 'line' coverage: 417
+  New 'line' coverage: 42
+  New 'line' coverage: 420
+  New 'line' coverage: 421
+  New 'line' coverage: 422
+  New 'line' coverage: 423
+  New 'line' coverage: 424
+  New 'line' coverage: 425
+  New 'line' coverage: 426
+  New 'line' coverage: 427
+  New 'line' coverage: 428
+  New 'line' coverage: 429
+  New 'line' coverage: 430
+  New 'line' coverage: 431
+  New 'line' coverage: 432
+  New 'line' coverage: 433
+  New 'line' coverage: 434
+  New 'line' coverage: 435
+  New 'line' coverage: 436
+  New 'line' coverage: 437
+  New 'line' coverage: 438
+  New 'line' coverage: 439
+  New 'line' coverage: 440
+  New 'line' coverage: 441
+  New 'line' coverage: 442
+  New 'line' coverage: 443
+  New 'line' coverage: 444
+  New 'line' coverage: 445
+  New 'line' coverage: 446
+  New 'line' coverage: 447
+  New 'line' coverage: 448
+  New 'line' coverage: 449
+  New 'line' coverage: 450
+  New 'line' coverage: 451
+  New 'line' coverage: 452
+  New 'line' coverage: 453
+  New 'line' coverage: 455
+  New 'line' coverage: 456
+  New 'line' coverage: 457
+  New 'line' coverage: 458
+  New 'line' coverage: 459
+  New 'line' coverage: 460
+  New 'line' coverage: 461
+  New 'line' coverage: 462
+  New 'line' coverage: 463
+  New 'line' coverage: 464
+  New 'line' coverage: 465
+  New 'line' coverage: 466
+  New 'line' coverage: 467
+  New 'line' coverage: 468
+  New 'line' coverage: 469
+  New 'line' coverage: 473
+  New 'line' coverage: 475
+  New 'line' coverage: 480
+  New 'line' coverage: 483
+  New 'line' coverage: 75
+  New 'line' coverage: 76
+  New 'line' coverage: 77
+  New 'line' coverage: 78
+  New 'line' coverage: 79
+  New 'line' coverage: 80
+  New 'line' coverage: 81
+
+[+] AFL test case: id:000001,src:000000,time:197,execs:11,op:havoc,rep:16,+cov (1 / 59), cycle: 0
+    lines......: 0.6% (137 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.2% (30 of 15950 branches)
+[+] AFL test case: id:000002,src:000000,time:1168,execs:28,op:havoc,rep:16,+cov (2 / 59), cycle: 0
+    lines......: 0.7% (140 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.2% (35 of 15950 branches)
+
+    Coverage diff id:000001,src:000000,time:197,execs:11,op:havoc,rep:16,+cov id:000002,src:000000,time:1168,execs:28,op:havoc,rep:16,+cov
+diff id:000001,src:000000,time:197,execs:11,op:havoc,rep:16,+cov -> id:000002,src:000000,time:1168,execs:28,op:havoc,rep:16,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 180
+  New 'line' coverage: 197
+  New 'line' coverage: 205
+
+[+] AFL test case: id:000003,src:000000,time:2974,execs:59,op:havoc,rep:2 (3 / 59), cycle: 0
+    lines......: 0.7% (140 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.2% (35 of 15950 branches)
+[+] AFL test case: id:000004,src:000000,time:6042,execs:117,op:havoc,rep:4,+cov (4 / 59), cycle: 0
+    lines......: 0.7% (141 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.2% (38 of 15950 branches)
+
+    Coverage diff id:000003,src:000000,time:2974,execs:59,op:havoc,rep:2 id:000004,src:000000,time:6042,execs:117,op:havoc,rep:4,+cov
+diff id:000003,src:000000,time:2974,execs:59,op:havoc,rep:2 -> id:000004,src:000000,time:6042,execs:117,op:havoc,rep:4,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 177
+
+[+] AFL test case: id:000005,src:000000,time:8023,execs:154,op:havoc,rep:16,+cov (5 / 59), cycle: 0
+    lines......: 0.7% (159 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (62 of 15950 branches)
+
+    Coverage diff id:000004,src:000000,time:6042,execs:117,op:havoc,rep:4,+cov id:000005,src:000000,time:8023,execs:154,op:havoc,rep:16,+cov
+diff id:000004,src:000000,time:6042,execs:117,op:havoc,rep:4,+cov -> id:000005,src:000000,time:8023,execs:154,op:havoc,rep:16,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 161
+  New 'line' coverage: 162
+  New 'line' coverage: 165
+  New 'line' coverage: 166
+  New 'line' coverage: 198
+  New 'line' coverage: 201
+  New 'line' coverage: 202
+  New 'line' coverage: 211
+  New 'line' coverage: 231
+  New 'line' coverage: 232
+  New 'line' coverage: 235
+  New 'line' coverage: 236
+  New 'line' coverage: 245
+  New 'line' coverage: 265
+  New 'line' coverage: 266
+  New 'line' coverage: 269
+  New 'line' coverage: 270
+  New 'line' coverage: 279
+
+[+] AFL test case: id:000006,src:000000,time:9254,execs:176,op:havoc,rep:8,+cov (6 / 59), cycle: 0
+    lines......: 0.7% (159 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (62 of 15950 branches)
+[+] AFL test case: id:000007,src:000000,time:11922,execs:226,op:havoc,rep:16 (7 / 59), cycle: 0
+    lines......: 0.7% (159 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (62 of 15950 branches)
+[+] AFL test case: id:000008,src:000000,time:14990,execs:284,op:havoc,rep:16,+cov (8 / 59), cycle: 0
+    lines......: 0.7% (159 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (62 of 15950 branches)
+[+] AFL test case: id:000009,src:000000,time:17197,execs:325,op:havoc,rep:8,+cov (9 / 59), cycle: 0
+    lines......: 0.8% (163 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (66 of 15950 branches)
+
+    Coverage diff id:000008,src:000000,time:14990,execs:284,op:havoc,rep:16,+cov id:000009,src:000000,time:17197,execs:325,op:havoc,rep:8,+cov
+diff id:000008,src:000000,time:14990,execs:284,op:havoc,rep:16,+cov -> id:000009,src:000000,time:17197,execs:325,op:havoc,rep:8,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 163
+  New 'line' coverage: 199
+  New 'line' coverage: 233
+  New 'line' coverage: 267
+
+[+] AFL test case: id:000010,src:000000,time:27443,execs:522,op:havoc,rep:4,+cov (10 / 59), cycle: 0
+    lines......: 0.8% (163 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (66 of 15950 branches)
+[+] AFL test case: id:000011,src:000000,time:41641,execs:795,op:havoc,rep:8,+cov (11 / 59), cycle: 0
+    lines......: 0.8% (163 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (66 of 15950 branches)
+[+] AFL test case: id:000012,src:000000,time:46927,execs:893,op:havoc,rep:16,+cov (12 / 59), cycle: 0
+    lines......: 0.8% (163 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.4% (67 of 15950 branches)
+[+] AFL test case: id:000013,src:000000,time:49002,execs:931,op:havoc,rep:2,+cov (13 / 59), cycle: 0
+    lines......: 0.8% (166 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (74 of 15950 branches)
+
+    Coverage diff id:000012,src:000000,time:46927,execs:893,op:havoc,rep:16,+cov id:000013,src:000000,time:49002,execs:931,op:havoc,rep:2,+cov
+diff id:000012,src:000000,time:46927,execs:893,op:havoc,rep:16,+cov -> id:000013,src:000000,time:49002,execs:931,op:havoc,rep:2,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 248
+  New 'line' coverage: 273
+  New 'line' coverage: 282
+
+[+] AFL test case: id:000014,src:000000,time:84194,execs:1608,op:havoc,rep:4,+cov (14 / 59), cycle: 0
+    lines......: 0.8% (166 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (75 of 15950 branches)
+[+] AFL test case: id:000015,src:000000,time:115535,execs:2188,op:havoc,rep:16 (15 / 59), cycle: 0
+    lines......: 0.8% (166 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (75 of 15950 branches)
+[+] AFL test case: id:000016,src:000000,time:135551,execs:2563,op:havoc,rep:4,+cov (16 / 59), cycle: 0
+    lines......: 0.8% (169 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (80 of 15950 branches)
+
+    Coverage diff id:000015,src:000000,time:115535,execs:2188,op:havoc,rep:16 id:000016,src:000000,time:135551,execs:2563,op:havoc,rep:4,+cov
+diff id:000015,src:000000,time:115535,execs:2188,op:havoc,rep:16 -> id:000016,src:000000,time:135551,execs:2563,op:havoc,rep:4,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 171
+  New 'line' coverage: 214
+  New 'line' coverage: 239
+
+[+] AFL test case: id:000017,src:000000,time:168121,execs:3175,op:havoc,rep:2 (17 / 59), cycle: 0
+    lines......: 0.8% (169 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (80 of 15950 branches)
+[+] AFL test case: id:000018,src:000000+000006,time:177524,execs:3351,op:splice,rep:8 (18 / 59), cycle: 0
+    lines......: 0.8% (169 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (80 of 15950 branches)
+[+] AFL test case: id:000019,src:000000+000012,time:179708,execs:3391,op:splice,rep:8,+cov (19 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (81 of 15950 branches)
+
+    Coverage diff id:000018,src:000000+000006,time:177524,execs:3351,op:splice,rep:8 id:000019,src:000000+000012,time:179708,execs:3391,op:splice,rep:8,+cov
+diff id:000018,src:000000+000006,time:177524,execs:3351,op:splice,rep:8 -> id:000019,src:000000+000012,time:179708,execs:3391,op:splice,rep:8,+cov
+Src file: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+  New 'line' coverage: 168
+
+[+] AFL test case: id:000020,src:000000+000012,time:180287,execs:3400,op:splice,rep:4,+cov (20 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (81 of 15950 branches)
+[+] AFL test case: id:000021,src:000000+000012,time:180951,execs:3410,op:splice,rep:8 (21 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (81 of 15950 branches)
+[+] AFL test case: id:000022,src:000000+000012,time:181563,execs:3420,op:splice,rep:4,+cov (22 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (81 of 15950 branches)
+[+] AFL test case: id:000023,src:000000+000012,time:182137,execs:3429,op:splice,rep:4 (23 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (81 of 15950 branches)
+[+] AFL test case: id:000024,src:000000+000012,time:182719,execs:3438,op:splice,rep:8,+cov (24 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000025,src:000000+000012,time:183461,execs:3450,op:splice,rep:16,+cov (25 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000026,src:000000+000012,time:184089,execs:3460,op:splice,rep:16 (26 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000027,src:000000+000012,time:184714,execs:3470,op:splice,rep:2,+cov (27 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000028,src:000000+000012,time:185447,execs:3482,op:splice,rep:4 (28 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000029,src:000000+000012,time:187638,execs:3522,op:splice,rep:16 (29 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000030,src:000000+000012,time:188423,execs:3535,op:splice,rep:16 (30 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000031,src:000000+000012,time:190979,execs:3582,op:splice,rep:8,+cov (31 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000032,src:000000+000012,time:191758,execs:3595,op:splice,rep:16,+cov (32 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000033,src:000000+000012,time:193892,execs:3632,op:splice,rep:4 (33 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000034,src:000000+000012,time:195373,execs:3658,op:splice,rep:16 (34 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000035,src:000000+000012,time:203941,execs:3815,op:splice,rep:2 (35 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000036,src:000000+000012,time:209801,execs:3924,op:splice,rep:16 (36 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000037,src:000000+000012,time:217966,execs:4077,op:splice,rep:16 (37 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000038,src:000000+000012,time:221149,execs:4136,op:splice,rep:8 (38 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000039,src:000000+000037,time:274725,execs:5152,op:splice,rep:2 (39 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000040,src:000000+000037,time:275736,execs:5169,op:splice,rep:4 (40 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000041,src:000031,time:303081,execs:5692,op:havoc,rep:16 (41 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000042,src:000031+000032,time:307281,execs:5770,op:splice,rep:16,+cov (42 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000043,src:000005+000040,time:329319,execs:6189,op:splice,rep:2 (43 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000044,src:000005+000042,time:332015,execs:6241,op:splice,rep:8,+cov (44 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000045,src:000024+000040,time:358040,execs:6731,op:splice,rep:16 (45 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000046,src:000009+000043,time:366156,execs:6882,op:splice,rep:8 (46 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000047,src:000010+000044,time:411535,execs:7730,op:splice,rep:2 (47 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000048,src:000010+000044,time:412265,execs:7742,op:splice,rep:8 (48 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000049,src:000037+000035,time:433282,execs:8138,op:splice,rep:2 (49 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000050,src:000032+000038,time:474157,execs:8905,op:splice,rep:8 (50 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (82 of 15950 branches)
+[+] AFL test case: id:000051,src:000006+000013,time:503626,execs:9454,op:splice,rep:2,+cov (51 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (83 of 15950 branches)
+[+] AFL test case: id:000052,src:000006+000040,time:508315,execs:9542,op:splice,rep:2 (52 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (83 of 15950 branches)
+[+] AFL test case: id:000053,src:000006+000040,time:509355,execs:9560,op:splice,rep:4 (53 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (83 of 15950 branches)
+[+] AFL test case: id:000054,src:000004+000014,time:544290,execs:10217,op:splice,rep:2 (54 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (83 of 15950 branches)
+[+] AFL test case: id:000055,src:000051,time:564664,execs:10605,op:havoc,rep:2,+cov (55 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (84 of 15950 branches)
+[+] AFL test case: id:000056,src:000051,time:565341,execs:10616,op:havoc,rep:4,+cov (56 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (85 of 15950 branches)
+[+] AFL test case: id:000057,src:000055,time:581162,execs:10916,op:havoc,rep:4,+cov (57 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (86 of 15950 branches)
+[+] AFL test case: id:000058,src:000056+000046,time:598095,execs:11240,op:splice,rep:4 (58 / 59), cycle: 0
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (86 of 15950 branches)
+[+] Processed 59 / 59 test cases.
+
+[+] Final zero coverage report: pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_out/cov/zero-cov
+[+] Final positive coverage report: pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_out/cov/pos-cov
+    lines......: 0.8% (170 of 21355 lines)
+    functions..: 1.0% (8 of 791 functions)
+    branches...: 0.5% (86 of 15950 branches)
+[+] Final lcov web report: pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c_out/cov/web/index.html

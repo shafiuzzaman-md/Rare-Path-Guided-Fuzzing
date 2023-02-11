@@ -1,0 +1,53 @@
+# All functions / lines in this file were executed by at
+# least one AFL test case. See the cov/id-delta-cov file
+# for more information.
+File: /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_STARTPALS_ActiveStandby.ufo.BOUNDED-10.pals.c
+    function: Console_task_each_pals_period()
+    function: Pendulum_prism_task_each_pals_period()
+    function: Side1_activestandby_task_each_pals_period()
+    function: Side2_activestandby_task_each_pals_period()
+    function: __VERIFIER_nondet_bool()
+    function: __VERIFIER_nondet_char()
+    function: get_inputs()
+    function: main()
+File: /aflhellobatch/pals_floodmax.5.4.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.3.2.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.3.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.4.1.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.4.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.5.1.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.5.2.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.5.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.6.1.ufo.BOUNDED-12.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.6.2.ufo.BOUNDED-12.pals.c
+File: /aflhellobatch/pals_lcr-var-start-time.6.ufo.BOUNDED-12.pals.c
+File: /aflhellobatch/pals_lcr.3.1.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_lcr.3.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_lcr.4.1.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_lcr.4.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_lcr.5.1.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr.5.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_lcr.6.1.ufo.BOUNDED-12.pals.c
+File: /aflhellobatch/pals_lcr.6.ufo.BOUNDED-12.pals.c
+File: /aflhellobatch/pals_lcr.7.1.ufo.BOUNDED-14.pals.c
+File: /aflhellobatch/pals_lcr.7.ufo.BOUNDED-14.pals.c
+File: /aflhellobatch/pals_lcr.8.1.ufo.BOUNDED-16.pals.c
+File: /aflhellobatch/pals_lcr.8.ufo.BOUNDED-16.pals.c
+File: /aflhellobatch/pals_opt-floodmax.3.1.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_opt-floodmax.3.2.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_opt-floodmax.3.3.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_opt-floodmax.3.4.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_opt-floodmax.3.ufo.BOUNDED-6.pals.c
+File: /aflhellobatch/pals_opt-floodmax.4.1.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_opt-floodmax.4.2.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_opt-floodmax.4.3.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_opt-floodmax.4.4.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_opt-floodmax.4.ufo.BOUNDED-8.pals.c
+File: /aflhellobatch/pals_opt-floodmax.5.1.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_opt-floodmax.5.2.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_opt-floodmax.5.3.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_opt-floodmax.5.4.ufo.BOUNDED-10.pals.c
+File: /aflhellobatch/pals_opt-floodmax.5.ufo.BOUNDED-10.pals.c

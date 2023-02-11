@@ -1,0 +1,10 @@
+# id:NNNNNN*_file, cycle, src_file, coverage_type, fcn/line
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, __VERIFIER_nondet_bool()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, __VERIFIER_nondet_char()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, get_inputs()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, main()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, node1()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, node2()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, node3()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, node4()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_floodmax.5.ufo.BOUNDED-10.pals.c, function, node5()

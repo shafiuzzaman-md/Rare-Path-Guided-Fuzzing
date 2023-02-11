@@ -1,0 +1,9 @@
+# id:NNNNNN*_file, cycle, src_file, coverage_type, fcn/line
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, Console_task_each_pals_period()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, Pendulum_prism_task_each_pals_period()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, Side1_activestandby_task_each_pals_period()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, Side2_activestandby_task_each_pals_period()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, __VERIFIER_nondet_bool()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, __VERIFIER_nondet_char()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, get_inputs()
+id:000000,time:0,execs:0,orig:hello.txt, 0, /aflhellobatch/pals_STARTPALS_ActiveStandby.4_2.ufo.BOUNDED-10.pals.c, function, main()
