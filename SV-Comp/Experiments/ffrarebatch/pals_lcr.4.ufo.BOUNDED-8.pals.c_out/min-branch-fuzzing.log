@@ -1,0 +1,50 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 18 new coverage in 450 total execs
+calib stage: 7 new branches in 450 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 27 new coverage in 6296 total execs
+det stage: 12 new branches in 6296 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 56 new coverage in 39296 total execs
+havoc stage: 18 new branches in 39296 total execs
+Was returning list of size 0
+Upped max exp to 6
+Trying to fuzz input pals_lcr.4.ufo.BOUNDED-8.pals.c_out/queue/id:000022,src:000000,op:flip4,pos:22,+cov: 
+which hit branch 31308 (hit by 51 inputs) 
+while bitflipping, 176 of 272 tries hit branch 31308
+while calibrating, 78 of 103 tries hit branch 31308
+calib stage: 0 new coverage in 375 total execs
+calib stage: 0 new branches in 375 total execs
+In deterministic stage, 2544 of 2544 tries hit branch 31308
+det stage: 1 new coverage in 2927 total execs
+det stage: 0 new branches in 2927 total execs
+In havoc stage, 7529 of 16384 tries hit branch 31308
+havoc stage: 5 new coverage in 19343 total execs
+havoc stage: 0 new branches in 19343 total execs
+Was returning list of size 0
+Upped max exp to 8
+Trying to fuzz input pals_lcr.4.ufo.BOUNDED-8.pals.c_out/queue/id:000025,src:000000,op:arith8,pos:6,val:-4,+cov: 
+which hit branch 43747 (hit by 195 inputs) 
+while bitflipping, 240 of 272 tries hit branch 43747
+while calibrating, 94 of 103 tries hit branch 43747
+calib stage: 0 new coverage in 375 total execs
+calib stage: 0 new branches in 375 total execs
+In deterministic stage, 4765 of 4765 tries hit branch 43747
+det stage: 0 new coverage in 5140 total execs
+det stage: 0 new branches in 5140 total execs
+In havoc stage, 552 of 1024 tries hit branch 43747
+havoc stage: 0 new coverage in 6164 total execs
+havoc stage: 0 new branches in 6164 total execs
+Was returning list of size 0
+Upped max exp to 9
+Trying to fuzz input pals_lcr.4.ufo.BOUNDED-8.pals.c_out/queue/id:000026,src:000000,op:arith8,pos:14,val:-3,+cov: 
+which hit branch 52086 (hit by 269 inputs) 
+while bitflipping, 208 of 272 tries hit branch 52086
+while calibrating, 86 of 103 tries hit branch 52086
+calib stage: 0 new coverage in 375 total execs
+calib stage: 0 new branches in 375 total execs
+In havoc stage, 2815 of 2815 tries hit branch 52086
+havoc stage: 0 new coverage in 3190 total execs
+havoc stage: 0 new branches in 3190 total execs
