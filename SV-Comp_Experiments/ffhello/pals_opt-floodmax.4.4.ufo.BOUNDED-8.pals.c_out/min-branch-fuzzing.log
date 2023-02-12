@@ -1,0 +1,35 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 1 new coverage in 80 total execs
+calib stage: 0 new branches in 80 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 3 new coverage in 1167 total execs
+det stage: 2 new branches in 1167 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 16 new coverage in 17658 total execs
+havoc stage: 13 new branches in 17658 total execs
+Trying to fuzz input pals_opt-floodmax.4.4.ufo.BOUNDED-8.pals.c_out/queue/id:000015,src:000000,op:havoc,rep:16,+cov: 
+which hit branch 32393 (hit by 1 inputs) 
+while bitflipping, 72 of 168 tries hit branch 32393
+while calibrating, 39 of 64 tries hit branch 32393
+calib stage: 0 new coverage in 232 total execs
+calib stage: 0 new branches in 232 total execs
+In deterministic stage, 1025 of 1031 tries hit branch 32393
+det stage: 1 new coverage in 1271 total execs
+det stage: 0 new branches in 1271 total execs
+In havoc stage, 6776 of 16384 tries hit branch 32393
+havoc stage: 22 new coverage in 17829 total execs
+havoc stage: 6 new branches in 17829 total execs
+Trying to fuzz input pals_opt-floodmax.4.4.ufo.BOUNDED-8.pals.c_out/queue/id:000036,src:000015,op:havoc,rep:128,+cov: 
+which hit branch 33718 (hit by 1 inputs) 
+while bitflipping, 502 of 536 tries hit branch 33718
+while calibrating, 192 of 202 tries hit branch 33718
+calib stage: 1 new coverage in 746 total execs
+calib stage: 0 new branches in 746 total execs
+In deterministic stage, 11081 of 11105 tries hit branch 33718
+det stage: 1 new coverage in 11855 total execs
+det stage: 0 new branches in 11855 total execs
+In havoc stage, 59 of 205 tries hit branch 33718
+havoc stage: 2 new coverage in 12068 total execs
+havoc stage: 1 new branches in 12068 total execs

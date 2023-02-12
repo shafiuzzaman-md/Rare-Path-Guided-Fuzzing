@@ -1,0 +1,44 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 1 new coverage in 80 total execs
+calib stage: 0 new branches in 80 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 2 new coverage in 1158 total execs
+det stage: 1 new branches in 1158 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 3 new coverage in 1574 total execs
+havoc stage: 2 new branches in 1574 total execs
+Trying to fuzz input pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c_out/queue/id:000003,src:000000,op:havoc,rep:4,+cov: 
+which hit branch 63314 (hit by 1 inputs) 
+while bitflipping, 64 of 104 tries hit branch 63314
+while calibrating, 29 of 40 tries hit branch 63314
+calib stage: 2 new coverage in 160 total execs
+calib stage: 2 new branches in 160 total execs
+In deterministic stage, 765 of 765 tries hit branch 63314
+det stage: 3 new coverage in 933 total execs
+det stage: 2 new branches in 933 total execs
+In havoc stage, 5720 of 6528 tries hit branch 63314
+havoc stage: 36 new coverage in 7725 total execs
+havoc stage: 13 new branches in 7725 total execs
+Trying to fuzz input pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c_out/queue/id:000035,src:000003,op:havoc,rep:32,+cov: 
+which hit branch 54604 (hit by 1 inputs) 
+while bitflipping, 144 of 216 tries hit branch 54604
+while calibrating, 63 of 82 tries hit branch 54604
+calib stage: 0 new coverage in 299 total execs
+calib stage: 0 new branches in 299 total execs
+In deterministic stage, 2399 of 2445 tries hit branch 54604
+det stage: 1 new coverage in 2752 total execs
+det stage: 0 new branches in 2752 total execs
+In havoc stage, 2513 of 6528 tries hit branch 54604
+havoc stage: 24 new coverage in 9464 total execs
+havoc stage: 5 new branches in 9464 total execs
+Trying to fuzz input pals_lcr-var-start-time.4.2.ufo.BOUNDED-8.pals.c_out/queue/id:000061,src:000035,op:havoc,rep:64,+cov: 
+which hit branch 1655 (hit by 1 inputs) 
+while bitflipping, 461 of 512 tries hit branch 1655
+while calibrating, 180 of 193 tries hit branch 1655
+calib stage: 0 new coverage in 705 total execs
+calib stage: 0 new branches in 705 total execs
+In havoc stage, 7514 of 7516 tries hit branch 1655
+havoc stage: 0 new coverage in 8224 total execs
+havoc stage: 0 new branches in 8224 total execs
