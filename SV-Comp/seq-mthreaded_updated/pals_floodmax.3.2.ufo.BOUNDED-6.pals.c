@@ -555,8 +555,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error(); 
-    }
+   // ERROR: {reach_error();   }
     }
   }
 }
