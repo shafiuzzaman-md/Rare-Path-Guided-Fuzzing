@@ -1,0 +1,48 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 0 new coverage in 36 total execs
+calib stage: 0 new branches in 36 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 2 new coverage in 648 total execs
+det stage: 2 new branches in 648 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 12 new coverage in 33497 total execs
+havoc stage: 11 new branches in 33497 total execs
+Trying to fuzz input pals_STARTPALS_ActiveStandby.5.ufo.BOUNDED-10.pals.c_out/queue/id:000008,src:000000,op:havoc,rep:16,+cov: 
+which hit branch 5571 (hit by 1 inputs) 
+while bitflipping, 32 of 224 tries hit branch 5571
+while calibrating, 35 of 85 tries hit branch 5571
+calib stage: 1 new coverage in 317 total execs
+calib stage: 1 new branches in 317 total execs
+In deterministic stage, 285 of 288 tries hit branch 5571
+det stage: 2 new coverage in 613 total execs
+det stage: 2 new branches in 613 total execs
+In havoc stage, 12440 of 32768 tries hit branch 5571
+havoc stage: 17 new coverage in 33501 total execs
+havoc stage: 4 new branches in 33501 total execs
+Was returning list of size 0
+Upped max exp to 4
+Trying to fuzz input pals_STARTPALS_ActiveStandby.5.ufo.BOUNDED-10.pals.c_out/queue/id:000024,src:000008,op:havoc,rep:128,+cov: 
+which hit branch 42166 (hit by 14 inputs) 
+while bitflipping, 46 of 232 tries hit branch 42166
+while calibrating, 41 of 88 tries hit branch 42166
+calib stage: 0 new coverage in 320 total execs
+calib stage: 0 new branches in 320 total execs
+In deterministic stage, 533 of 535 tries hit branch 42166
+det stage: 0 new coverage in 855 total execs
+det stage: 0 new branches in 855 total execs
+In havoc stage, 531 of 1024 tries hit branch 42166
+havoc stage: 0 new coverage in 1879 total execs
+havoc stage: 0 new branches in 1879 total execs
+Was returning list of size 0
+Upped max exp to 6
+Trying to fuzz input pals_STARTPALS_ActiveStandby.5.ufo.BOUNDED-10.pals.c_out/queue/id:000029,src:000008,op:havoc,rep:16: 
+which hit branch 11332 (hit by 37 inputs) 
+while bitflipping, 464 of 488 tries hit branch 11332
+while calibrating, 178 of 184 tries hit branch 11332
+calib stage: 1 new coverage in 680 total execs
+calib stage: 0 new branches in 680 total execs
+In havoc stage, 2472 of 2639 tries hit branch 11332
+havoc stage: 1 new coverage in 3319 total execs
+havoc stage: 0 new branches in 3319 total execs

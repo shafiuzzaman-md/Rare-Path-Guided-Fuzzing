@@ -1,0 +1,23 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 24 new coverage in 750 total execs
+calib stage: 9 new branches in 750 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 46 new coverage in 11619 total execs
+det stage: 18 new branches in 11619 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 138 new coverage in 45123 total execs
+havoc stage: 32 new branches in 45123 total execs
+Trying to fuzz input pals_lcr-var-start-time.6.ufo.BOUNDED-12.pals.c_out/queue/id:000045,src:000000,op:arith8,pos:56,val:-1,+cov: 
+which hit branch 55324 (hit by 10 inputs) 
+while bitflipping, 247 of 496 tries hit branch 55324
+while calibrating, 124 of 187 tries hit branch 55324
+calib stage: 4 new coverage in 715 total execs
+calib stage: 0 new branches in 715 total execs
+In deterministic stage, 2305 of 2332 tries hit branch 55324
+det stage: 4 new coverage in 3047 total execs
+det stage: 0 new branches in 3047 total execs
+In havoc stage, 5654 of 15457 tries hit branch 55324
+havoc stage: 12 new coverage in 18568 total execs
+havoc stage: 0 new branches in 18568 total execs

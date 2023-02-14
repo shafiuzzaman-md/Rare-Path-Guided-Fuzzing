@@ -1,0 +1,50 @@
+Entering new queueing cycle
+while bitflipping, 0 of 0 tries hit branch -1
+while calibrating, 0 of 0 tries hit branch -1
+calib stage: 37 new coverage in 890 total execs
+calib stage: 11 new branches in 890 total execs
+In deterministic stage, 0 of 0 tries hit branch -1
+det stage: 66 new coverage in 12524 total execs
+det stage: 21 new branches in 12524 total execs
+In havoc stage, 0 of 0 tries hit branch -1
+havoc stage: 120 new coverage in 45724 total execs
+havoc stage: 27 new branches in 45724 total execs
+Was returning list of size 0
+Upped max exp to 5
+Trying to fuzz input pals_lcr.8.ufo.BOUNDED-16.pals.c_out/queue/id:000049,src:000000,op:flip4,pos:54,+cov: 
+which hit branch 29711 (hit by 30 inputs) 
+while bitflipping, 304 of 528 tries hit branch 29711
+while calibrating, 141 of 199 tries hit branch 29711
+calib stage: 2 new coverage in 743 total execs
+calib stage: 0 new branches in 743 total execs
+In deterministic stage, 3726 of 3728 tries hit branch 29711
+det stage: 2 new coverage in 4471 total execs
+det stage: 0 new branches in 4471 total execs
+In havoc stage, 405 of 1024 tries hit branch 29711
+havoc stage: 2 new coverage in 5495 total execs
+havoc stage: 0 new branches in 5495 total execs
+Was returning list of size 0
+Upped max exp to 6
+Trying to fuzz input pals_lcr.8.ufo.BOUNDED-16.pals.c_out/queue/id:000059,src:000000,op:arith8,pos:22,val:-6,+cov: 
+which hit branch 24877 (hit by 56 inputs) 
+while bitflipping, 432 of 528 tries hit branch 24877
+while calibrating, 174 of 199 tries hit branch 24877
+calib stage: 0 new coverage in 727 total execs
+calib stage: 0 new branches in 727 total execs
+In deterministic stage, 8168 of 8170 tries hit branch 24877
+det stage: 0 new coverage in 8897 total execs
+det stage: 0 new branches in 8897 total execs
+In havoc stage, 473 of 1024 tries hit branch 24877
+havoc stage: 0 new coverage in 9921 total execs
+havoc stage: 0 new branches in 9921 total execs
+Was returning list of size 0
+Upped max exp to 7
+Trying to fuzz input pals_lcr.8.ufo.BOUNDED-16.pals.c_out/queue/id:000060,src:000000,op:arith8,pos:30,val:-5,+cov: 
+which hit branch 45843 (hit by 94 inputs) 
+while bitflipping, 400 of 528 tries hit branch 45843
+while calibrating, 165 of 199 tries hit branch 45843
+calib stage: 0 new coverage in 727 total execs
+calib stage: 0 new branches in 727 total execs
+In havoc stage, 1059 of 1061 tries hit branch 45843
+havoc stage: 0 new coverage in 1788 total execs
+havoc stage: 0 new branches in 1788 total execs
