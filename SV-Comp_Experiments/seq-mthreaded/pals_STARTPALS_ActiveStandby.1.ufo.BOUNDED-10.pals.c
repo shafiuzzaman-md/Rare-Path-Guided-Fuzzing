@@ -61,7 +61,7 @@ msg_t side2_written  ;
 void assert(_Bool arg ) ;
 extern void abort_updated(void);
 void assume_abort_if_not(int cond) {
-  if(!cond) {abort();}
+  if(!cond) {abort_updated();}
 }
 static _Bool side1Failed_History_0  ;
 static _Bool side1Failed_History_1  ;
@@ -622,7 +622,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error();abort();}
+    ERROR: {reach_error();abort_updated();}
     }
   }
 }

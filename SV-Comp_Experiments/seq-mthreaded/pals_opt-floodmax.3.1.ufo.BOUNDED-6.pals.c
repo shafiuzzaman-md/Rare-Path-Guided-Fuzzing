@@ -530,7 +530,7 @@ int main(void)
   mode3 = __VERIFIER_nondet_bool();
   newmax3 = __VERIFIER_nondet_bool();
   i2 = init();
-  if(!(i2)) {abort();}
+  if(!(i2)) {abort_updated();}
   p12_old = nomsg;
   p12_new = nomsg;
   p13_old = nomsg;
@@ -576,7 +576,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error();abort();}
+    ERROR: {reach_error();abort_updated();}
     }
   }
 }

@@ -263,7 +263,7 @@ int check(void)
   } else {
     tmp = 0;
   }
-  if(!((_Bool )tmp)) {abort();}
+  if(!((_Bool )tmp)) {abort_updated();}
   tmp___3 = read_history_bool(0, 1);
   if (! tmp___3) {
     tmp___4 = read_history_bool(1, 1);
@@ -365,7 +365,7 @@ void gate1_each_pals_period(void)
   } else {
     tmp___0 = 0;
   }
-  if(!((_Bool )tmp___0)) {abort();}
+  if(!((_Bool )tmp___0)) {abort_updated();}
   g1v_new = next_state != nomsg && g1v_new == nomsg ? next_state : g1v_new;
   return;
 }
@@ -396,7 +396,7 @@ void gate2_each_pals_period(void)
   } else {
     tmp___0 = 0;
   }
-  if(!((_Bool )tmp___0)) {abort();}
+  if(!((_Bool )tmp___0)) {abort_updated();}
   g2v_new = next_state != nomsg && g2v_new == nomsg ? next_state : g2v_new;
   return;
 }
@@ -427,7 +427,7 @@ void gate3_each_pals_period(void)
   } else {
     tmp___0 = 0;
   }
-  if(!((_Bool )tmp___0)) {abort();}
+  if(!((_Bool )tmp___0)) {abort_updated();}
   g3v_new = next_state != nomsg && g3v_new == nomsg ? next_state : g3v_new;
   return;
 }
@@ -507,7 +507,7 @@ int main(void)
   votedValue_History_1 = __VERIFIER_nondet_char();
   votedValue_History_2 = __VERIFIER_nondet_char();
   i2 = init();
-  if(!(i2)) {abort();}
+  if(!(i2)) {abort_updated();}
   g1v_old = nomsg;
   g1v_new = nomsg;
   g2v_old = nomsg;
@@ -542,7 +542,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error();abort();}
+    ERROR: {reach_error();abort_updated();}
     }
   }
 }

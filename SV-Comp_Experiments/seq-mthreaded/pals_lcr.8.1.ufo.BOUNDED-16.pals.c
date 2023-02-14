@@ -25,7 +25,7 @@ char __VERIFIER_nondet_char(void) ;
 void assert(_Bool arg ) ;
 void abort_updated(void);
 void assume_abort_if_not(int cond) {
-  if(!cond) {abort();}
+  if(!cond) {abort_updated();}
 }
 typedef char msg_t;
 typedef int port_t;
@@ -676,7 +676,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error();abort();}
+    ERROR: {reach_error();abort_updated();}
     }
   }
 }

@@ -353,7 +353,7 @@ int main(void)
   mode4 = __VERIFIER_nondet_bool();
   alive4 = __VERIFIER_nondet_bool();
   i2 = init();
-  if(!(i2)) {abort();}
+  if(!(i2)) {abort_updated();}
   p1_old = nomsg;
   p1_new = nomsg;
   p2_old = nomsg;
@@ -392,7 +392,7 @@ void assert(_Bool arg )
   {
   if (! arg) {
     {
-    ERROR: {reach_error();abort();}
+    ERROR: {reach_error();abort_updated();}
     }
   }
 }
