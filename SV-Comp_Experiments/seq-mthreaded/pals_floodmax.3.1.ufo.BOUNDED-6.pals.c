@@ -453,7 +453,8 @@ int check(void)
   return (tmp);
 }
 }
-int main(void) 
+int main(int argc, char **argv) 
+{ get_inputs(argv[1]); 
 { 
   int c1 ;
   int i2 ;
