@@ -20,7 +20,7 @@ void reach_error() { __assert_fail("0", "pals_floodmax.3.1.ufo.BOUNDED-6.pals.c"
 char __VERIFIER_nondet_char(void) ;
 _Bool __VERIFIER_nondet_bool(void) ;
 void assert(_Bool arg ) ;
-void abort(void);
+void abort_updated(void);
 typedef char msg_t;
 typedef int port_t;
 extern void read(port_t p , msg_t m ) ;

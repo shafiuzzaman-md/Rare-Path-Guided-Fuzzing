@@ -36,7 +36,7 @@ int8_t g3v_old ;
 int8_t g3v_new ;
 extern _Bool __VERIFIER_nondet_bool() ;
 extern msg_t __VERIFIER_nondet_char() ;
-extern void abort(void);
+extern void abort_updated(void);
 _Bool gate1Failed  ;
 _Bool gate2Failed  ;
 _Bool gate3Failed  ;

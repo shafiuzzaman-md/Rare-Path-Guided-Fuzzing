@@ -57,7 +57,7 @@ _Bool side2Failed  ;
 msg_t side1_written  ;
 msg_t side2_written  ;
 void assert(_Bool arg ) ;
-extern void abort(void);
+extern void abort_updated(void);
 void assume_abort_if_not(int cond) {
   if(!cond) {abort();}
 }

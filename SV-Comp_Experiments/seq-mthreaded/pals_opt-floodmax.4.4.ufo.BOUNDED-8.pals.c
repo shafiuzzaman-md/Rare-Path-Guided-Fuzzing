@@ -20,7 +20,7 @@ void reach_error() { __assert_fail("0", "pals_opt-floodmax.4.4.ufo.BOUNDED-8.pal
 char __VERIFIER_nondet_char(void) ;
 _Bool __VERIFIER_nondet_bool(void) ;
 void assert(_Bool arg ) ;
-void abort(void);
+void abort_updated(void);
 void assume_abort_if_not(int cond) {
   if(!cond) {abort();}
 }

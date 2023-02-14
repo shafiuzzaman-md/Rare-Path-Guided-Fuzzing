@@ -21,7 +21,7 @@ _Bool __VERIFIER_nondet_bool(void) ;
 char __VERIFIER_nondet_char(void) ;
 char __VERIFIER_nondet_char(void) ;
 void assert(_Bool arg ) ;
-void abort(void);
+void abort_updated(void);
 void assume_abort_if_not(int cond) {
   if(!cond) {abort();}
 }
