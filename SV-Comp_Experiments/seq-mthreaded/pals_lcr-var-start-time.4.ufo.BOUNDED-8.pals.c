@@ -5,8 +5,8 @@ void abort_updated(void)
 }
 extern void __assert_fail(const char *, const char *, unsigned int, const char *) __attribute__ ((__nothrow__ , __leaf__)) __attribute__ ((__noreturn__));
 void reach_error() { 
-  printf("Error reached");
- } { __assert_fail("0", "pals_lcr-var-start-time.4.ufo.BOUNDED-8.pals.c", 3, "reach_error"); }
+  printf("Error reached");}
+// }            { __assert_fail("0", "pals_lcr-var-start-time.4.ufo.BOUNDED-8.pals.c", 3, "reach_error"); }
 
 // This file is part of the SV-Benchmarks collection of verification tasks:
 // https://github.com/sosy-lab/sv-benchmarks
